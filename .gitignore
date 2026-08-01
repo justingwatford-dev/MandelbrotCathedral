@@ -14,7 +14,10 @@ venv/
 
 # model weights / metrics
 *.npz
+
+# animations, except the curated showcase renders
 *.gif
+!figures/*.gif
 
 # run directories (script-generated)
 branch_cut_outputs/
