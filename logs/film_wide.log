@@ -1,0 +1,184 @@
+########## WIDE SEED 1 ##########
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+seed 1 | w in [1.5, 6.5]
+C:\Users\itali\OneDrive\Desktop\MandelbrotCathedra\BranchCutCathedral.py:212: RuntimeWarning: divide by zero encountered in divide
+  - np.log(np.log(r)) / np.log(w)
+
+Generating 300,000 branch-cut samples...
+Dataset complete in 1.8s | inside=18.16% | slow boundary=14.78%
+params 365,186 | interior weight 4.51
+[  1/300] loss=0.853474 lr=3.00e-04 1s
+[  5/300] loss=0.302833 lr=3.00e-04 5s
+[ 10/300] loss=0.190221 lr=2.99e-04 11s
+[ 15/300] loss=0.139644 lr=2.98e-04 16s
+[ 20/300] loss=0.109133 lr=2.97e-04 21s
+[ 25/300] loss=0.091514 lr=2.95e-04 27s
+[ 30/300] loss=0.078453 lr=2.93e-04 32s
+[ 35/300] loss=0.068878 lr=2.90e-04 38s
+[ 40/300] loss=0.060727 lr=2.87e-04 43s
+[ 45/300] loss=0.055613 lr=2.84e-04 49s
+[ 50/300] loss=0.052380 lr=2.80e-04 54s
+[ 55/300] loss=0.045772 lr=2.76e-04 59s
+[ 60/300] loss=0.044277 lr=2.71e-04 64s
+[ 65/300] loss=0.041630 lr=2.67e-04 70s
+[ 70/300] loss=0.040046 lr=2.62e-04 75s
+[ 75/300] loss=0.036990 lr=2.56e-04 80s
+[ 80/300] loss=0.034954 lr=2.51e-04 86s
+[ 85/300] loss=0.032253 lr=2.45e-04 91s
+[ 90/300] loss=0.030951 lr=2.38e-04 97s
+[ 95/300] loss=0.030490 lr=2.32e-04 102s
+[100/300] loss=0.028144 lr=2.25e-04 107s
+[105/300] loss=0.027797 lr=2.18e-04 113s
+[110/300] loss=0.026027 lr=2.11e-04 118s
+[115/300] loss=0.025303 lr=2.04e-04 123s
+[120/300] loss=0.023359 lr=1.97e-04 128s
+[125/300] loss=0.022675 lr=1.89e-04 134s
+[130/300] loss=0.021865 lr=1.82e-04 139s
+[135/300] loss=0.020886 lr=1.74e-04 144s
+[140/300] loss=0.020308 lr=1.66e-04 150s
+[145/300] loss=0.019068 lr=1.58e-04 155s
+[150/300] loss=0.018333 lr=1.50e-04 160s
+[155/300] loss=0.017051 lr=1.43e-04 166s
+[160/300] loss=0.016671 lr=1.35e-04 171s
+[165/300] loss=0.016081 lr=1.27e-04 176s
+[170/300] loss=0.015352 lr=1.19e-04 181s
+[175/300] loss=0.014878 lr=1.12e-04 187s
+[180/300] loss=0.013929 lr=1.04e-04 192s
+[185/300] loss=0.013039 lr=9.69e-05 197s
+[190/300] loss=0.012875 lr=8.97e-05 203s
+[195/300] loss=0.012375 lr=8.26e-05 208s
+[200/300] loss=0.011804 lr=7.57e-05 213s
+[205/300] loss=0.011228 lr=6.91e-05 219s
+[210/300] loss=0.010972 lr=6.26e-05 225s
+[215/300] loss=0.010441 lr=5.64e-05 230s
+[220/300] loss=0.010210 lr=5.05e-05 235s
+[225/300] loss=0.009727 lr=4.48e-05 241s
+[230/300] loss=0.009590 lr=3.94e-05 246s
+[235/300] loss=0.009118 lr=3.43e-05 252s
+[240/300] loss=0.008939 lr=2.96e-05 257s
+[245/300] loss=0.008659 lr=2.51e-05 263s
+[250/300] loss=0.008472 lr=2.10e-05 268s
+[255/300] loss=0.008225 lr=1.73e-05 274s
+[260/300] loss=0.008105 lr=1.39e-05 279s
+[265/300] loss=0.007943 lr=1.09e-05 285s
+[270/300] loss=0.007790 lr=8.32e-06 290s
+[275/300] loss=0.007720 lr=6.09e-06 296s
+[280/300] loss=0.007611 lr=4.27e-06 301s
+[285/300] loss=0.007590 lr=2.84e-06 307s
+[290/300] loss=0.007530 lr=1.82e-06 312s
+[295/300] loss=0.007469 lr=1.20e-06 317s
+[300/300] loss=0.007505 lr=1.00e-06 323s
+DONE 323s -> run_film_wide_s1/model.npz
+
+EMBEDDING CURVE (trained)
+  curve shape       : (5001, 1152)  (3 blocks x 2 x 192 dims)
+  sampled every     : 0.001 in w  (5001 points)
+  arc-length speed  : mean 0.1937  std 0.0360  median 0.1886
+     w    windowed   x median   pctile
+     2      0.2791      1.48x    95.8%
+     3      0.2510      1.33x    91.9%
+     4      0.2637      1.40x    94.1%
+     5      0.2488      1.32x    91.0%
+     6      0.2418      1.28x    89.0%
+
+  lattice phase test on [2, 3, 4, 5, 6]   [frozen metric v1]
+    window +/-0.05, offsets +/-0.4 step 0.001, linear interpolation
+    observed windowed speed : 0.2569
+    shifted-lattice null    : mean 0.1945  max 0.2572
+    phase_exceedance        : 0.0125   (rank, not a p-value)
+    best-fit offset         : +0.005  (0.000 = integers exactly optimal)
+
+    criterion: exceedance < 0.05 and |offset| <= 0.02  ->  PASS
+  wrote run_film_wide_s1/embedding_curve.png
+########## WIDE SEED 2 ##########
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+seed 2 | w in [1.5, 6.5]
+C:\Users\itali\OneDrive\Desktop\MandelbrotCathedra\BranchCutCathedral.py:212: RuntimeWarning: divide by zero encountered in divide
+  - np.log(np.log(r)) / np.log(w)
+
+Generating 300,000 branch-cut samples...
+Dataset complete in 2.1s | inside=18.26% | slow boundary=14.88%
+params 365,186 | interior weight 4.48
+[  1/300] loss=0.839162 lr=3.00e-04 1s
+[  5/300] loss=0.296351 lr=3.00e-04 6s
+[ 10/300] loss=0.191015 lr=2.99e-04 12s
+[ 15/300] loss=0.142417 lr=2.98e-04 17s
+[ 20/300] loss=0.110097 lr=2.97e-04 23s
+[ 25/300] loss=0.090845 lr=2.95e-04 28s
+[ 30/300] loss=0.076594 lr=2.93e-04 33s
+[ 35/300] loss=0.068499 lr=2.90e-04 39s
+[ 40/300] loss=0.061152 lr=2.87e-04 44s
+[ 45/300] loss=0.056354 lr=2.84e-04 50s
+[ 50/300] loss=0.051751 lr=2.80e-04 55s
+[ 55/300] loss=0.046433 lr=2.76e-04 60s
+[ 60/300] loss=0.044981 lr=2.71e-04 66s
+[ 65/300] loss=0.041243 lr=2.67e-04 71s
+[ 70/300] loss=0.038529 lr=2.62e-04 77s
+[ 75/300] loss=0.036430 lr=2.56e-04 82s
+[ 80/300] loss=0.034319 lr=2.51e-04 88s
+[ 85/300] loss=0.032885 lr=2.45e-04 93s
+[ 90/300] loss=0.030000 lr=2.38e-04 99s
+[ 95/300] loss=0.029378 lr=2.32e-04 104s
+[100/300] loss=0.027513 lr=2.25e-04 110s
+[105/300] loss=0.026261 lr=2.18e-04 116s
+[110/300] loss=0.025572 lr=2.11e-04 121s
+[115/300] loss=0.024541 lr=2.04e-04 127s
+[120/300] loss=0.023739 lr=1.97e-04 133s
+[125/300] loss=0.023351 lr=1.89e-04 139s
+[130/300] loss=0.021186 lr=1.82e-04 144s
+[135/300] loss=0.019903 lr=1.74e-04 150s
+[140/300] loss=0.019652 lr=1.66e-04 156s
+[145/300] loss=0.018400 lr=1.58e-04 162s
+[150/300] loss=0.017543 lr=1.50e-04 168s
+[155/300] loss=0.016713 lr=1.43e-04 173s
+[160/300] loss=0.016245 lr=1.35e-04 179s
+[165/300] loss=0.015372 lr=1.27e-04 185s
+[170/300] loss=0.014689 lr=1.19e-04 191s
+[175/300] loss=0.014123 lr=1.12e-04 196s
+[180/300] loss=0.013541 lr=1.04e-04 202s
+[185/300] loss=0.013095 lr=9.69e-05 208s
+[190/300] loss=0.012449 lr=8.97e-05 214s
+[195/300] loss=0.012042 lr=8.26e-05 219s
+[200/300] loss=0.011403 lr=7.57e-05 225s
+[205/300] loss=0.011309 lr=6.91e-05 231s
+[210/300] loss=0.010682 lr=6.26e-05 237s
+[215/300] loss=0.010263 lr=5.64e-05 242s
+[220/300] loss=0.009954 lr=5.05e-05 248s
+[225/300] loss=0.009697 lr=4.48e-05 254s
+[230/300] loss=0.009459 lr=3.94e-05 260s
+[235/300] loss=0.009056 lr=3.43e-05 266s
+[240/300] loss=0.008856 lr=2.96e-05 272s
+[245/300] loss=0.008693 lr=2.51e-05 278s
+[250/300] loss=0.008438 lr=2.10e-05 283s
+[255/300] loss=0.008166 lr=1.73e-05 289s
+[260/300] loss=0.008076 lr=1.39e-05 295s
+[265/300] loss=0.007887 lr=1.09e-05 300s
+[270/300] loss=0.007878 lr=8.32e-06 306s
+[275/300] loss=0.007668 lr=6.09e-06 312s
+[280/300] loss=0.007611 lr=4.27e-06 318s
+[285/300] loss=0.007552 lr=2.84e-06 324s
+[290/300] loss=0.007497 lr=1.82e-06 329s
+[295/300] loss=0.007518 lr=1.20e-06 335s
+[300/300] loss=0.007471 lr=1.00e-06 341s
+DONE 341s -> run_film_wide_s2/model.npz
+
+EMBEDDING CURVE (trained)
+  curve shape       : (5001, 1152)  (3 blocks x 2 x 192 dims)
+  sampled every     : 0.001 in w  (5001 points)
+  arc-length speed  : mean 0.1857  std 0.0377  median 0.1805
+     w    windowed   x median   pctile
+     2      0.2462      1.36x    90.1%
+     3      0.2556      1.42x    92.3%
+     4      0.2387      1.32x    88.9%
+     5      0.2767      1.53x    96.0%
+     6      0.2446      1.35x    89.9%
+
+  lattice phase test on [2, 3, 4, 5, 6]   [frozen metric v1]
+    window +/-0.05, offsets +/-0.4 step 0.001, linear interpolation
+    observed windowed speed : 0.2524
+    shifted-lattice null    : mean 0.1863  max 0.2527
+    phase_exceedance        : 0.0137   (rank, not a p-value)
+    best-fit offset         : +0.005  (0.000 = integers exactly optimal)
+
+    criterion: exceedance < 0.05 and |offset| <= 0.02  ->  PASS
+  wrote run_film_wide_s2/embedding_curve.png

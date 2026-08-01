@@ -1,0 +1,812 @@
+########## basis=integer seed=1 ##########
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+Sampling real orbits...
+  407,561 orbit-visited states
+  target variance 4.3871
+  255,363 parameters
+  seed 1 | angular basis 'integer': [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0]
+  NOTE integer harmonics make the C_w-invariant feature available at integer w by construction;
+       a symmetry-defect dip there needs a shifted/random/none control to interpret.
+
+[  1/300] loss=6.2399e-01 R2=0.85777  1s
+[  5/300] loss=1.7654e-02 R2=0.99598  10s
+[ 10/300] loss=5.9353e-03 R2=0.99865  25s
+[ 15/300] loss=2.9883e-03 R2=0.99932  40s
+[ 20/300] loss=1.7908e-03 R2=0.99959  54s
+[ 25/300] loss=1.1864e-03 R2=0.99973  68s
+[ 30/300] loss=8.4261e-04 R2=0.99981  82s
+[ 35/300] loss=6.3708e-04 R2=0.99985  88s
+[ 40/300] loss=5.0497e-04 R2=0.99988  94s
+[ 45/300] loss=4.9065e-04 R2=0.99989  100s
+[ 50/300] loss=3.3076e-04 R2=0.99992  106s
+[ 55/300] loss=2.9125e-04 R2=0.99993  112s
+[ 60/300] loss=3.0272e-04 R2=0.99993  118s
+[ 65/300] loss=1.9289e-04 R2=0.99996  124s
+[ 70/300] loss=2.3083e-04 R2=0.99995  130s
+[ 75/300] loss=1.9244e-04 R2=0.99996  137s
+[ 80/300] loss=1.7425e-04 R2=0.99996  143s
+[ 85/300] loss=1.6005e-04 R2=0.99996  149s
+[ 90/300] loss=1.3168e-04 R2=0.99997  155s
+[ 95/300] loss=1.4706e-04 R2=0.99997  161s
+[100/300] loss=1.2410e-04 R2=0.99997  167s
+[105/300] loss=1.3701e-04 R2=0.99997  173s
+[110/300] loss=1.0033e-04 R2=0.99998  179s
+[115/300] loss=6.3200e-05 R2=0.99999  185s
+[120/300] loss=6.6649e-05 R2=0.99998  191s
+[125/300] loss=5.8538e-05 R2=0.99999  197s
+[130/300] loss=9.3888e-05 R2=0.99998  203s
+[135/300] loss=4.7023e-05 R2=0.99999  209s
+[140/300] loss=4.4401e-05 R2=0.99999  216s
+[145/300] loss=4.3040e-05 R2=0.99999  222s
+[150/300] loss=4.6183e-05 R2=0.99999  228s
+[155/300] loss=4.0456e-05 R2=0.99999  234s
+[160/300] loss=3.9027e-05 R2=0.99999  240s
+[165/300] loss=3.6076e-05 R2=0.99999  246s
+[170/300] loss=3.4322e-05 R2=0.99999  252s
+[175/300] loss=2.4373e-05 R2=0.99999  258s
+[180/300] loss=2.4365e-05 R2=0.99999  265s
+[185/300] loss=2.1824e-05 R2=1.00000  271s
+[190/300] loss=2.2492e-05 R2=0.99999  276s
+[195/300] loss=1.9038e-05 R2=1.00000  283s
+[200/300] loss=1.7134e-05 R2=1.00000  289s
+[205/300] loss=1.6407e-05 R2=1.00000  295s
+[210/300] loss=1.4826e-05 R2=1.00000  301s
+[215/300] loss=1.5929e-05 R2=1.00000  307s
+[220/300] loss=1.3735e-05 R2=1.00000  312s
+[225/300] loss=1.2551e-05 R2=1.00000  318s
+[230/300] loss=1.2206e-05 R2=1.00000  324s
+[235/300] loss=1.1139e-05 R2=1.00000  330s
+[240/300] loss=1.0717e-05 R2=1.00000  336s
+[245/300] loss=1.0243e-05 R2=1.00000  342s
+[250/300] loss=9.9466e-06 R2=1.00000  348s
+[255/300] loss=9.5738e-06 R2=1.00000  354s
+[260/300] loss=9.3346e-06 R2=1.00000  360s
+[265/300] loss=9.0277e-06 R2=1.00000  366s
+[270/300] loss=8.8619e-06 R2=1.00000  372s
+[275/300] loss=8.6746e-06 R2=1.00000  378s
+[280/300] loss=8.5304e-06 R2=1.00000  384s
+[285/300] loss=8.4055e-06 R2=1.00000  390s
+[290/300] loss=8.3319e-06 R2=1.00000  396s
+[295/300] loss=8.2824e-06 R2=1.00000  402s
+[300/300] loss=8.2582e-06 R2=1.00000  408s
+
+Saved harm_integer_s1/map.npz
+
+Rendering the network's own Mandelbrot set...
+  iterating the LEARNED map, w=2.0...
+  interior IoU            : 0.9356
+  escape-time MAE         : 0.0131
+  set disagreement        : 1.09% of plane
+  wrote harm_integer_s1/neural_mandelbrot.png and neural_julia.png
+----- symmetry sweep: basis=integer seed=1 -----
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+
+C_w SYMMETRY DEFECT at w = 2.0
+  true map    : 1.448e-16
+  learned map : 0.0285
+
+  median defect across w : 0.0814
+  w = 2: defect 0.0285    0.35x median   DIP
+  w = 3: defect 0.0097    0.12x median   DIP
+  w = 4: defect 0.0083    0.10x median   DIP
+  w = 5: defect 0.0071    0.09x median   DIP
+  w = 6: defect 0.0139    0.17x median   DIP
+
+  Dips at the integers = the network reproduces the equivariance;
+  a flat curve means it is fitting the surface pointwise.
+  Whether 'found it unaided' follows depends on how the model's w
+  was SAMPLED. neural_dynamics draws w continuously, so for those
+  checkpoints it does. A model trained with an integer-anchored
+  sampler was shown the lattice, and this plot cannot tell the
+  difference -- compare against the true-map curve, not the median.
+
+Wrote to harm_integer_s1/
+########## basis=shifted seed=1 ##########
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+Sampling real orbits...
+  407,561 orbit-visited states
+  target variance 4.3871
+  255,363 parameters
+  seed 1 | angular basis 'shifted': [1.25, 2.25, 3.25, 4.25, 5.25, 6.25, 7.25, 8.25, 9.25, 10.25]
+
+[  1/300] loss=6.2775e-01 R2=0.85691  1s
+[  5/300] loss=1.7662e-02 R2=0.99597  7s
+[ 10/300] loss=5.8854e-03 R2=0.99866  13s
+[ 15/300] loss=3.0177e-03 R2=0.99931  19s
+[ 20/300] loss=1.8395e-03 R2=0.99958  25s
+[ 25/300] loss=1.2250e-03 R2=0.99972  31s
+[ 30/300] loss=8.9638e-04 R2=0.99980  37s
+[ 35/300] loss=6.6521e-04 R2=0.99985  43s
+[ 40/300] loss=5.5201e-04 R2=0.99987  49s
+[ 45/300] loss=5.0360e-04 R2=0.99989  55s
+[ 50/300] loss=4.2831e-04 R2=0.99990  60s
+[ 55/300] loss=2.6210e-04 R2=0.99994  67s
+[ 60/300] loss=2.8031e-04 R2=0.99994  73s
+[ 65/300] loss=2.4953e-04 R2=0.99994  79s
+[ 70/300] loss=1.8402e-04 R2=0.99996  85s
+[ 75/300] loss=1.6601e-04 R2=0.99996  91s
+[ 80/300] loss=1.6011e-04 R2=0.99996  96s
+[ 85/300] loss=1.3329e-04 R2=0.99997  103s
+[ 90/300] loss=1.1649e-04 R2=0.99997  108s
+[ 95/300] loss=1.3794e-04 R2=0.99997  114s
+[100/300] loss=1.0657e-04 R2=0.99998  120s
+[105/300] loss=1.0386e-04 R2=0.99998  126s
+[110/300] loss=1.0775e-04 R2=0.99998  132s
+[115/300] loss=8.7590e-05 R2=0.99998  138s
+[120/300] loss=5.7162e-05 R2=0.99999  144s
+[125/300] loss=6.0855e-05 R2=0.99999  150s
+[130/300] loss=7.2663e-05 R2=0.99998  156s
+[135/300] loss=4.9670e-05 R2=0.99999  162s
+[140/300] loss=4.6089e-05 R2=0.99999  168s
+[145/300] loss=4.2119e-05 R2=0.99999  173s
+[150/300] loss=4.0866e-05 R2=0.99999  179s
+[155/300] loss=3.4163e-05 R2=0.99999  185s
+[160/300] loss=4.5684e-05 R2=0.99999  191s
+[165/300] loss=3.8517e-05 R2=0.99999  197s
+[170/300] loss=3.0209e-05 R2=0.99999  203s
+[175/300] loss=2.5823e-05 R2=0.99999  209s
+[180/300] loss=2.7406e-05 R2=0.99999  215s
+[185/300] loss=2.7729e-05 R2=0.99999  221s
+[190/300] loss=2.3982e-05 R2=0.99999  227s
+[195/300] loss=2.1113e-05 R2=1.00000  233s
+[200/300] loss=1.7885e-05 R2=1.00000  239s
+[205/300] loss=1.6846e-05 R2=1.00000  245s
+[210/300] loss=1.6186e-05 R2=1.00000  251s
+[215/300] loss=1.4735e-05 R2=1.00000  256s
+[220/300] loss=1.3367e-05 R2=1.00000  262s
+[225/300] loss=1.3085e-05 R2=1.00000  268s
+[230/300] loss=1.2027e-05 R2=1.00000  274s
+[235/300] loss=1.1604e-05 R2=1.00000  280s
+[240/300] loss=1.0860e-05 R2=1.00000  286s
+[245/300] loss=1.0580e-05 R2=1.00000  292s
+[250/300] loss=1.0169e-05 R2=1.00000  298s
+[255/300] loss=9.7210e-06 R2=1.00000  304s
+[260/300] loss=9.4992e-06 R2=1.00000  310s
+[265/300] loss=9.2446e-06 R2=1.00000  316s
+[270/300] loss=9.0165e-06 R2=1.00000  322s
+[275/300] loss=8.8244e-06 R2=1.00000  328s
+[280/300] loss=8.7074e-06 R2=1.00000  334s
+[285/300] loss=8.5718e-06 R2=1.00000  340s
+[290/300] loss=8.4899e-06 R2=1.00000  346s
+[295/300] loss=8.4366e-06 R2=1.00000  352s
+[300/300] loss=8.4111e-06 R2=1.00000  358s
+
+Saved harm_shifted_s1/map.npz
+
+Rendering the network's own Mandelbrot set...
+  iterating the LEARNED map, w=2.0...
+  interior IoU            : 0.9312
+  escape-time MAE         : 0.0139
+  set disagreement        : 1.17% of plane
+  wrote harm_shifted_s1/neural_mandelbrot.png and neural_julia.png
+----- symmetry sweep: basis=shifted seed=1 -----
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+
+C_w SYMMETRY DEFECT at w = 2.0
+  true map    : 1.448e-16
+  learned map : 0.0278
+
+  median defect across w : 0.0809
+  w = 2: defect 0.0282    0.35x median   DIP
+  w = 3: defect 0.0098    0.12x median   DIP
+  w = 4: defect 0.0083    0.10x median   DIP
+  w = 5: defect 0.0071    0.09x median   DIP
+  w = 6: defect 0.0145    0.18x median   DIP
+
+  Dips at the integers = the network reproduces the equivariance;
+  a flat curve means it is fitting the surface pointwise.
+  Whether 'found it unaided' follows depends on how the model's w
+  was SAMPLED. neural_dynamics draws w continuously, so for those
+  checkpoints it does. A model trained with an integer-anchored
+  sampler was shown the lattice, and this plot cannot tell the
+  difference -- compare against the true-map curve, not the median.
+
+Wrote to harm_shifted_s1/
+########## basis=random seed=1 ##########
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+Sampling real orbits...
+  407,561 orbit-visited states
+  target variance 4.3871
+  255,363 parameters
+  seed 1 | angular basis 'random': [1.9359999895095825, 1.9769999980926514, 3.6040000915527344, 3.6429998874664307, 3.882999897003174, 4.603000164031982, 6.994999885559082, 7.065000057220459, 7.506999969482422, 8.409000396728516]
+
+[  1/300] loss=6.3196e-01 R2=0.85595  1s
+[  5/300] loss=1.7187e-02 R2=0.99608  7s
+[ 10/300] loss=5.6852e-03 R2=0.99870  13s
+[ 15/300] loss=2.9022e-03 R2=0.99934  19s
+[ 20/300] loss=1.7713e-03 R2=0.99960  25s
+[ 25/300] loss=1.1863e-03 R2=0.99973  31s
+[ 30/300] loss=8.4158e-04 R2=0.99981  37s
+[ 35/300] loss=6.4290e-04 R2=0.99985  43s
+[ 40/300] loss=6.3503e-04 R2=0.99986  49s
+[ 45/300] loss=4.4666e-04 R2=0.99990  55s
+[ 50/300] loss=3.6526e-04 R2=0.99992  60s
+[ 55/300] loss=3.1089e-04 R2=0.99993  65s
+[ 60/300] loss=2.8561e-04 R2=0.99993  71s
+[ 65/300] loss=2.6141e-04 R2=0.99994  77s
+[ 70/300] loss=2.4076e-04 R2=0.99995  83s
+[ 75/300] loss=1.8577e-04 R2=0.99996  88s
+[ 80/300] loss=1.4924e-04 R2=0.99997  93s
+[ 85/300] loss=1.3740e-04 R2=0.99997  98s
+[ 90/300] loss=1.5540e-04 R2=0.99996  104s
+[ 95/300] loss=1.2904e-04 R2=0.99997  109s
+[100/300] loss=1.0426e-04 R2=0.99998  114s
+[105/300] loss=1.3828e-04 R2=0.99997  119s
+[110/300] loss=9.5899e-05 R2=0.99998  124s
+[115/300] loss=7.8749e-05 R2=0.99998  129s
+[120/300] loss=1.0328e-04 R2=0.99998  135s
+[125/300] loss=6.9216e-05 R2=0.99998  140s
+[130/300] loss=7.7354e-05 R2=0.99998  147s
+[135/300] loss=5.6728e-05 R2=0.99999  153s
+[140/300] loss=4.6622e-05 R2=0.99999  159s
+[145/300] loss=4.8282e-05 R2=0.99999  165s
+[150/300] loss=4.3672e-05 R2=0.99999  171s
+[155/300] loss=3.5532e-05 R2=0.99999  177s
+[160/300] loss=3.9662e-05 R2=0.99999  183s
+[165/300] loss=2.5970e-05 R2=0.99999  189s
+[170/300] loss=2.8587e-05 R2=0.99999  194s
+[175/300] loss=2.7994e-05 R2=0.99999  200s
+[180/300] loss=2.8295e-05 R2=0.99999  206s
+[185/300] loss=2.6197e-05 R2=0.99999  212s
+[190/300] loss=1.9674e-05 R2=1.00000  218s
+[195/300] loss=1.8264e-05 R2=1.00000  224s
+[200/300] loss=1.7911e-05 R2=1.00000  230s
+[205/300] loss=1.6585e-05 R2=1.00000  236s
+[210/300] loss=1.5400e-05 R2=1.00000  242s
+[215/300] loss=1.4926e-05 R2=1.00000  248s
+[220/300] loss=1.3722e-05 R2=1.00000  254s
+[225/300] loss=1.3870e-05 R2=1.00000  259s
+[230/300] loss=1.2405e-05 R2=1.00000  265s
+[235/300] loss=1.1702e-05 R2=1.00000  271s
+[240/300] loss=1.1138e-05 R2=1.00000  277s
+[245/300] loss=1.0696e-05 R2=1.00000  283s
+[250/300] loss=1.0333e-05 R2=1.00000  289s
+[255/300] loss=9.9821e-06 R2=1.00000  295s
+[260/300] loss=9.7009e-06 R2=1.00000  301s
+[265/300] loss=9.4269e-06 R2=1.00000  307s
+[270/300] loss=9.2289e-06 R2=1.00000  313s
+[275/300] loss=9.0406e-06 R2=1.00000  319s
+[280/300] loss=8.9230e-06 R2=1.00000  325s
+[285/300] loss=8.7968e-06 R2=1.00000  331s
+[290/300] loss=8.7150e-06 R2=1.00000  337s
+[295/300] loss=8.6658e-06 R2=1.00000  343s
+[300/300] loss=8.6417e-06 R2=1.00000  349s
+
+Saved harm_random_s1/map.npz
+
+Rendering the network's own Mandelbrot set...
+  iterating the LEARNED map, w=2.0...
+  interior IoU            : 0.9329
+  escape-time MAE         : 0.0129
+  set disagreement        : 1.14% of plane
+  wrote harm_random_s1/neural_mandelbrot.png and neural_julia.png
+----- symmetry sweep: basis=random seed=1 -----
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+
+C_w SYMMETRY DEFECT at w = 2.0
+  true map    : 1.448e-16
+  learned map : 0.0252
+
+  median defect across w : 0.0811
+  w = 2: defect 0.0252    0.31x median   DIP
+  w = 3: defect 0.0098    0.12x median   DIP
+  w = 4: defect 0.0086    0.11x median   DIP
+  w = 5: defect 0.0072    0.09x median   DIP
+  w = 6: defect 0.0142    0.17x median   DIP
+
+  Dips at the integers = the network reproduces the equivariance;
+  a flat curve means it is fitting the surface pointwise.
+  Whether 'found it unaided' follows depends on how the model's w
+  was SAMPLED. neural_dynamics draws w continuously, so for those
+  checkpoints it does. A model trained with an integer-anchored
+  sampler was shown the lattice, and this plot cannot tell the
+  difference -- compare against the true-map curve, not the median.
+
+Wrote to harm_random_s1/
+########## basis=none seed=1 ##########
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+Sampling real orbits...
+  407,561 orbit-visited states
+  target variance 4.3871
+  251,523 parameters
+  seed 1 | angular basis 'none': (none - raw theta only)
+
+[  1/300] loss=6.9445e-01 R2=0.84171  1s
+[  5/300] loss=3.5885e-02 R2=0.99182  7s
+[ 10/300] loss=1.0981e-02 R2=0.99750  13s
+[ 15/300] loss=5.4326e-03 R2=0.99876  19s
+[ 20/300] loss=3.3212e-03 R2=0.99924  25s
+[ 25/300] loss=2.3057e-03 R2=0.99947  31s
+[ 30/300] loss=1.8035e-03 R2=0.99959  37s
+[ 35/300] loss=1.4410e-03 R2=0.99967  43s
+[ 40/300] loss=1.3111e-03 R2=0.99970  49s
+[ 45/300] loss=1.1933e-03 R2=0.99973  55s
+[ 50/300] loss=8.8474e-04 R2=0.99980  61s
+[ 55/300] loss=7.5370e-04 R2=0.99983  67s
+[ 60/300] loss=7.0981e-04 R2=0.99984  72s
+[ 65/300] loss=6.1709e-04 R2=0.99986  78s
+[ 70/300] loss=5.6193e-04 R2=0.99987  84s
+[ 75/300] loss=4.8935e-04 R2=0.99989  90s
+[ 80/300] loss=4.7827e-04 R2=0.99989  97s
+[ 85/300] loss=4.2989e-04 R2=0.99990  103s
+[ 90/300] loss=4.0007e-04 R2=0.99991  108s
+[ 95/300] loss=3.4588e-04 R2=0.99992  114s
+[100/300] loss=3.0721e-04 R2=0.99993  120s
+[105/300] loss=2.9028e-04 R2=0.99993  126s
+[110/300] loss=2.5601e-04 R2=0.99994  132s
+[115/300] loss=2.5727e-04 R2=0.99994  138s
+[120/300] loss=2.5231e-04 R2=0.99994  144s
+[125/300] loss=2.4333e-04 R2=0.99994  150s
+[130/300] loss=2.0349e-04 R2=0.99995  156s
+[135/300] loss=1.9755e-04 R2=0.99995  162s
+[140/300] loss=1.7438e-04 R2=0.99996  168s
+[145/300] loss=1.7438e-04 R2=0.99996  174s
+[150/300] loss=1.5170e-04 R2=0.99997  180s
+[155/300] loss=1.3973e-04 R2=0.99997  186s
+[160/300] loss=1.2975e-04 R2=0.99997  192s
+[165/300] loss=1.4628e-04 R2=0.99997  198s
+[170/300] loss=1.1474e-04 R2=0.99997  204s
+[175/300] loss=1.0599e-04 R2=0.99998  210s
+[180/300] loss=9.9652e-05 R2=0.99998  216s
+[185/300] loss=9.2084e-05 R2=0.99998  222s
+[190/300] loss=8.5513e-05 R2=0.99998  228s
+[195/300] loss=8.0505e-05 R2=0.99998  234s
+[200/300] loss=7.9341e-05 R2=0.99998  240s
+[205/300] loss=7.3540e-05 R2=0.99998  246s
+[210/300] loss=6.8828e-05 R2=0.99998  252s
+[215/300] loss=6.2871e-05 R2=0.99999  258s
+[220/300] loss=6.1999e-05 R2=0.99999  264s
+[225/300] loss=5.6379e-05 R2=0.99999  270s
+[230/300] loss=5.4340e-05 R2=0.99999  276s
+[235/300] loss=5.1001e-05 R2=0.99999  282s
+[240/300] loss=4.9138e-05 R2=0.99999  288s
+[245/300] loss=4.7183e-05 R2=0.99999  294s
+[250/300] loss=4.5229e-05 R2=0.99999  300s
+[255/300] loss=4.3745e-05 R2=0.99999  306s
+[260/300] loss=4.2612e-05 R2=0.99999  312s
+[265/300] loss=4.1662e-05 R2=0.99999  318s
+[270/300] loss=4.0591e-05 R2=0.99999  324s
+[275/300] loss=3.9922e-05 R2=0.99999  330s
+[280/300] loss=3.9302e-05 R2=0.99999  336s
+[285/300] loss=3.8827e-05 R2=0.99999  342s
+[290/300] loss=3.8479e-05 R2=0.99999  348s
+[295/300] loss=3.8261e-05 R2=0.99999  354s
+[300/300] loss=3.8184e-05 R2=0.99999  360s
+
+Saved harm_none_s1/map.npz
+
+Rendering the network's own Mandelbrot set...
+  iterating the LEARNED map, w=2.0...
+  interior IoU            : 0.9037
+  escape-time MAE         : 0.0185
+  set disagreement        : 1.70% of plane
+  wrote harm_none_s1/neural_mandelbrot.png and neural_julia.png
+----- symmetry sweep: basis=none seed=1 -----
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+
+C_w SYMMETRY DEFECT at w = 2.0
+  true map    : 1.448e-16
+  learned map : 0.0395
+
+  median defect across w : 0.1043
+  w = 2: defect 0.0396    0.38x median   DIP
+  w = 3: defect 0.0165    0.16x median   DIP
+  w = 4: defect 0.0149    0.14x median   DIP
+  w = 5: defect 0.0134    0.13x median   DIP
+  w = 6: defect 0.0251    0.24x median   DIP
+
+  Dips at the integers = the network reproduces the equivariance;
+  a flat curve means it is fitting the surface pointwise.
+  Whether 'found it unaided' follows depends on how the model's w
+  was SAMPLED. neural_dynamics draws w continuously, so for those
+  checkpoints it does. A model trained with an integer-anchored
+  sampler was shown the lattice, and this plot cannot tell the
+  difference -- compare against the true-map curve, not the median.
+
+Wrote to harm_none_s1/
+########## basis=integer seed=2 ##########
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+Sampling real orbits...
+  411,510 orbit-visited states
+  target variance 4.3372
+  255,363 parameters
+  seed 2 | angular basis 'integer': [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0]
+  NOTE integer harmonics make the C_w-invariant feature available at integer w by construction;
+       a symmetry-defect dip there needs a shifted/random/none control to interpret.
+
+[  1/300] loss=5.8832e-01 R2=0.86435  1s
+[  5/300] loss=1.6973e-02 R2=0.99609  7s
+[ 10/300] loss=5.5655e-03 R2=0.99872  13s
+[ 15/300] loss=2.8035e-03 R2=0.99935  19s
+[ 20/300] loss=1.6840e-03 R2=0.99961  25s
+[ 25/300] loss=1.1175e-03 R2=0.99974  31s
+[ 30/300] loss=8.3086e-04 R2=0.99981  37s
+[ 35/300] loss=6.7163e-04 R2=0.99985  43s
+[ 40/300] loss=5.1199e-04 R2=0.99988  49s
+[ 45/300] loss=4.1376e-04 R2=0.99990  55s
+[ 50/300] loss=4.8334e-04 R2=0.99989  61s
+[ 55/300] loss=3.1883e-04 R2=0.99993  67s
+[ 60/300] loss=2.5837e-04 R2=0.99994  73s
+[ 65/300] loss=2.1578e-04 R2=0.99995  79s
+[ 70/300] loss=1.6747e-04 R2=0.99996  85s
+[ 75/300] loss=1.5666e-04 R2=0.99996  91s
+[ 80/300] loss=1.7046e-04 R2=0.99996  97s
+[ 85/300] loss=1.6036e-04 R2=0.99996  103s
+[ 90/300] loss=1.2556e-04 R2=0.99997  109s
+[ 95/300] loss=1.1750e-04 R2=0.99997  115s
+[100/300] loss=1.0411e-04 R2=0.99998  121s
+[105/300] loss=1.4190e-04 R2=0.99997  127s
+[110/300] loss=9.4338e-05 R2=0.99998  133s
+[115/300] loss=7.7986e-05 R2=0.99998  139s
+[120/300] loss=8.7172e-05 R2=0.99998  145s
+[125/300] loss=6.0032e-05 R2=0.99999  151s
+[130/300] loss=6.4694e-05 R2=0.99999  157s
+[135/300] loss=4.9275e-05 R2=0.99999  163s
+[140/300] loss=5.2395e-05 R2=0.99999  169s
+[145/300] loss=5.1791e-05 R2=0.99999  175s
+[150/300] loss=4.1590e-05 R2=0.99999  181s
+[155/300] loss=2.9138e-05 R2=0.99999  187s
+[160/300] loss=3.6957e-05 R2=0.99999  193s
+[165/300] loss=3.4583e-05 R2=0.99999  199s
+[170/300] loss=2.9364e-05 R2=0.99999  205s
+[175/300] loss=2.4900e-05 R2=0.99999  211s
+[180/300] loss=2.6474e-05 R2=0.99999  217s
+[185/300] loss=2.5169e-05 R2=0.99999  223s
+[190/300] loss=1.9028e-05 R2=1.00000  229s
+[195/300] loss=1.8187e-05 R2=1.00000  235s
+[200/300] loss=1.7322e-05 R2=1.00000  240s
+[205/300] loss=1.7372e-05 R2=1.00000  247s
+[210/300] loss=1.4709e-05 R2=1.00000  253s
+[215/300] loss=1.4197e-05 R2=1.00000  258s
+[220/300] loss=1.2284e-05 R2=1.00000  265s
+[225/300] loss=1.1773e-05 R2=1.00000  271s
+[230/300] loss=1.1187e-05 R2=1.00000  277s
+[235/300] loss=1.0554e-05 R2=1.00000  283s
+[240/300] loss=1.0062e-05 R2=1.00000  289s
+[245/300] loss=9.7413e-06 R2=1.00000  294s
+[250/300] loss=9.2151e-06 R2=1.00000  300s
+[255/300] loss=8.9150e-06 R2=1.00000  306s
+[260/300] loss=8.6374e-06 R2=1.00000  312s
+[265/300] loss=8.3729e-06 R2=1.00000  318s
+[270/300] loss=8.1774e-06 R2=1.00000  324s
+[275/300] loss=8.0203e-06 R2=1.00000  330s
+[280/300] loss=7.8809e-06 R2=1.00000  336s
+[285/300] loss=7.7735e-06 R2=1.00000  342s
+[290/300] loss=7.6849e-06 R2=1.00000  348s
+[295/300] loss=7.6363e-06 R2=1.00000  354s
+[300/300] loss=7.6100e-06 R2=1.00000  360s
+
+Saved harm_integer_s2/map.npz
+
+Rendering the network's own Mandelbrot set...
+  iterating the LEARNED map, w=2.0...
+  interior IoU            : 0.9133
+  escape-time MAE         : 0.0156
+  set disagreement        : 1.50% of plane
+  wrote harm_integer_s2/neural_mandelbrot.png and neural_julia.png
+----- symmetry sweep: basis=integer seed=2 -----
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+
+C_w SYMMETRY DEFECT at w = 2.0
+  true map    : 1.448e-16
+  learned map : 0.0269
+
+  median defect across w : 0.0807
+  w = 2: defect 0.0271    0.34x median   DIP
+  w = 3: defect 0.0091    0.11x median   DIP
+  w = 4: defect 0.0078    0.10x median   DIP
+  w = 5: defect 0.0068    0.08x median   DIP
+  w = 6: defect 0.0139    0.17x median   DIP
+
+  Dips at the integers = the network reproduces the equivariance;
+  a flat curve means it is fitting the surface pointwise.
+  Whether 'found it unaided' follows depends on how the model's w
+  was SAMPLED. neural_dynamics draws w continuously, so for those
+  checkpoints it does. A model trained with an integer-anchored
+  sampler was shown the lattice, and this plot cannot tell the
+  difference -- compare against the true-map curve, not the median.
+
+Wrote to harm_integer_s2/
+########## basis=shifted seed=2 ##########
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+Sampling real orbits...
+  411,510 orbit-visited states
+  target variance 4.3372
+  255,363 parameters
+  seed 2 | angular basis 'shifted': [1.25, 2.25, 3.25, 4.25, 5.25, 6.25, 7.25, 8.25, 9.25, 10.25]
+
+[  1/300] loss=5.8901e-01 R2=0.86420  1s
+[  5/300] loss=1.7027e-02 R2=0.99607  7s
+[ 10/300] loss=5.5387e-03 R2=0.99872  13s
+[ 15/300] loss=2.8082e-03 R2=0.99935  20s
+[ 20/300] loss=1.7001e-03 R2=0.99961  25s
+[ 25/300] loss=1.1425e-03 R2=0.99974  31s
+[ 30/300] loss=8.3766e-04 R2=0.99981  37s
+[ 35/300] loss=6.4208e-04 R2=0.99985  44s
+[ 40/300] loss=5.3494e-04 R2=0.99988  49s
+[ 45/300] loss=4.0084e-04 R2=0.99991  55s
+[ 50/300] loss=3.3921e-04 R2=0.99992  61s
+[ 55/300] loss=3.4324e-04 R2=0.99992  68s
+[ 60/300] loss=2.3876e-04 R2=0.99994  74s
+[ 65/300] loss=2.1749e-04 R2=0.99995  80s
+[ 70/300] loss=1.7203e-04 R2=0.99996  86s
+[ 75/300] loss=1.5322e-04 R2=0.99996  92s
+[ 80/300] loss=1.5533e-04 R2=0.99996  98s
+[ 85/300] loss=1.5410e-04 R2=0.99996  104s
+[ 90/300] loss=1.3315e-04 R2=0.99997  110s
+[ 95/300] loss=1.0468e-04 R2=0.99998  116s
+[100/300] loss=8.4078e-05 R2=0.99998  122s
+[105/300] loss=9.5883e-05 R2=0.99998  128s
+[110/300] loss=8.7348e-05 R2=0.99998  134s
+[115/300] loss=7.5216e-05 R2=0.99998  140s
+[120/300] loss=6.5889e-05 R2=0.99998  146s
+[125/300] loss=6.7032e-05 R2=0.99998  152s
+[130/300] loss=5.2093e-05 R2=0.99999  158s
+[135/300] loss=5.9170e-05 R2=0.99999  164s
+[140/300] loss=4.5402e-05 R2=0.99999  170s
+[145/300] loss=3.8352e-05 R2=0.99999  176s
+[150/300] loss=4.8864e-05 R2=0.99999  182s
+[155/300] loss=4.5972e-05 R2=0.99999  188s
+[160/300] loss=3.1458e-05 R2=0.99999  194s
+[165/300] loss=2.6806e-05 R2=0.99999  200s
+[170/300] loss=2.4922e-05 R2=0.99999  206s
+[175/300] loss=2.7663e-05 R2=0.99999  212s
+[180/300] loss=2.6872e-05 R2=0.99999  219s
+[185/300] loss=2.2576e-05 R2=0.99999  225s
+[190/300] loss=1.9204e-05 R2=1.00000  231s
+[195/300] loss=1.7317e-05 R2=1.00000  237s
+[200/300] loss=1.6212e-05 R2=1.00000  243s
+[205/300] loss=1.7336e-05 R2=1.00000  249s
+[210/300] loss=1.4882e-05 R2=1.00000  255s
+[215/300] loss=1.3789e-05 R2=1.00000  261s
+[220/300] loss=1.3191e-05 R2=1.00000  268s
+[225/300] loss=1.1973e-05 R2=1.00000  274s
+[230/300] loss=1.1157e-05 R2=1.00000  280s
+[235/300] loss=1.0477e-05 R2=1.00000  286s
+[240/300] loss=1.0179e-05 R2=1.00000  292s
+[245/300] loss=9.6557e-06 R2=1.00000  298s
+[250/300] loss=9.3025e-06 R2=1.00000  304s
+[255/300] loss=9.0315e-06 R2=1.00000  310s
+[260/300] loss=8.7300e-06 R2=1.00000  316s
+[265/300] loss=8.4368e-06 R2=1.00000  323s
+[270/300] loss=8.2606e-06 R2=1.00000  329s
+[275/300] loss=8.1028e-06 R2=1.00000  335s
+[280/300] loss=7.9634e-06 R2=1.00000  341s
+[285/300] loss=7.8379e-06 R2=1.00000  347s
+[290/300] loss=7.7526e-06 R2=1.00000  353s
+[295/300] loss=7.7057e-06 R2=1.00000  359s
+[300/300] loss=7.6803e-06 R2=1.00000  365s
+
+Saved harm_shifted_s2/map.npz
+
+Rendering the network's own Mandelbrot set...
+  iterating the LEARNED map, w=2.0...
+  interior IoU            : 0.9215
+  escape-time MAE         : 0.0149
+  set disagreement        : 1.35% of plane
+  wrote harm_shifted_s2/neural_mandelbrot.png and neural_julia.png
+----- symmetry sweep: basis=shifted seed=2 -----
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+
+C_w SYMMETRY DEFECT at w = 2.0
+  true map    : 1.448e-16
+  learned map : 0.0245
+
+  median defect across w : 0.0809
+  w = 2: defect 0.0245    0.30x median   DIP
+  w = 3: defect 0.0094    0.12x median   DIP
+  w = 4: defect 0.0082    0.10x median   DIP
+  w = 5: defect 0.0070    0.09x median   DIP
+  w = 6: defect 0.0131    0.16x median   DIP
+
+  Dips at the integers = the network reproduces the equivariance;
+  a flat curve means it is fitting the surface pointwise.
+  Whether 'found it unaided' follows depends on how the model's w
+  was SAMPLED. neural_dynamics draws w continuously, so for those
+  checkpoints it does. A model trained with an integer-anchored
+  sampler was shown the lattice, and this plot cannot tell the
+  difference -- compare against the true-map curve, not the median.
+
+Wrote to harm_shifted_s2/
+########## basis=random seed=2 ##########
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+Sampling real orbits...
+  411,510 orbit-visited states
+  target variance 4.3372
+  255,363 parameters
+  seed 2 | angular basis 'random': [2.5869998931884766, 2.5920000076293945, 2.7909998893737793, 3.188999891281128, 3.571000099182129, 4.067999839782715, 4.5329999923706055, 7.177000045776367, 7.452000141143799, 10.39900016784668]
+
+[  1/300] loss=5.8359e-01 R2=0.86544  2s
+[  5/300] loss=1.6179e-02 R2=0.99627  7s
+[ 10/300] loss=5.3739e-03 R2=0.99876  13s
+[ 15/300] loss=2.7450e-03 R2=0.99937  19s
+[ 20/300] loss=1.6726e-03 R2=0.99961  25s
+[ 25/300] loss=1.1150e-03 R2=0.99974  31s
+[ 30/300] loss=8.0110e-04 R2=0.99982  37s
+[ 35/300] loss=6.1362e-04 R2=0.99986  43s
+[ 40/300] loss=4.9240e-04 R2=0.99989  49s
+[ 45/300] loss=3.9925e-04 R2=0.99991  55s
+[ 50/300] loss=5.1443e-04 R2=0.99988  61s
+[ 55/300] loss=4.1816e-04 R2=0.99990  67s
+[ 60/300] loss=2.2803e-04 R2=0.99995  73s
+[ 65/300] loss=1.9339e-04 R2=0.99996  79s
+[ 70/300] loss=1.9844e-04 R2=0.99995  85s
+[ 75/300] loss=1.7302e-04 R2=0.99996  91s
+[ 80/300] loss=1.5061e-04 R2=0.99997  97s
+[ 85/300] loss=1.9016e-04 R2=0.99996  103s
+[ 90/300] loss=1.1509e-04 R2=0.99997  109s
+[ 95/300] loss=1.4872e-04 R2=0.99997  115s
+[100/300] loss=1.0296e-04 R2=0.99998  121s
+[105/300] loss=9.7961e-05 R2=0.99998  127s
+[110/300] loss=9.2265e-05 R2=0.99998  133s
+[115/300] loss=7.9692e-05 R2=0.99998  139s
+[120/300] loss=7.0489e-05 R2=0.99998  145s
+[125/300] loss=6.6989e-05 R2=0.99998  151s
+[130/300] loss=5.1534e-05 R2=0.99999  157s
+[135/300] loss=4.8623e-05 R2=0.99999  163s
+[140/300] loss=4.8702e-05 R2=0.99999  169s
+[145/300] loss=3.6264e-05 R2=0.99999  175s
+[150/300] loss=3.4167e-05 R2=0.99999  181s
+[155/300] loss=3.1426e-05 R2=0.99999  187s
+[160/300] loss=3.4724e-05 R2=0.99999  193s
+[165/300] loss=3.0108e-05 R2=0.99999  200s
+[170/300] loss=2.7156e-05 R2=0.99999  205s
+[175/300] loss=2.5016e-05 R2=0.99999  211s
+[180/300] loss=2.5369e-05 R2=0.99999  216s
+[185/300] loss=2.1468e-05 R2=1.00000  221s
+[190/300] loss=1.9117e-05 R2=1.00000  226s
+[195/300] loss=1.7884e-05 R2=1.00000  232s
+[200/300] loss=1.5920e-05 R2=1.00000  237s
+[205/300] loss=1.5648e-05 R2=1.00000  242s
+[210/300] loss=1.4706e-05 R2=1.00000  248s
+[215/300] loss=1.3264e-05 R2=1.00000  253s
+[220/300] loss=1.2866e-05 R2=1.00000  258s
+[225/300] loss=1.1940e-05 R2=1.00000  264s
+[230/300] loss=1.1329e-05 R2=1.00000  269s
+[235/300] loss=1.0847e-05 R2=1.00000  274s
+[240/300] loss=1.0207e-05 R2=1.00000  280s
+[245/300] loss=9.8981e-06 R2=1.00000  285s
+[250/300] loss=9.5006e-06 R2=1.00000  291s
+[255/300] loss=9.1124e-06 R2=1.00000  296s
+[260/300] loss=8.9664e-06 R2=1.00000  301s
+[265/300] loss=8.6294e-06 R2=1.00000  307s
+[270/300] loss=8.4555e-06 R2=1.00000  312s
+[275/300] loss=8.2677e-06 R2=1.00000  317s
+[280/300] loss=8.1406e-06 R2=1.00000  323s
+[285/300] loss=8.0400e-06 R2=1.00000  329s
+[290/300] loss=7.9557e-06 R2=1.00000  334s
+[295/300] loss=7.9078e-06 R2=1.00000  339s
+[300/300] loss=7.8834e-06 R2=1.00000  345s
+
+Saved harm_random_s2/map.npz
+
+Rendering the network's own Mandelbrot set...
+  iterating the LEARNED map, w=2.0...
+  interior IoU            : 0.9304
+  escape-time MAE         : 0.0132
+  set disagreement        : 1.18% of plane
+  wrote harm_random_s2/neural_mandelbrot.png and neural_julia.png
+----- symmetry sweep: basis=random seed=2 -----
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+
+C_w SYMMETRY DEFECT at w = 2.0
+  true map    : 1.448e-16
+  learned map : 0.0265
+
+  median defect across w : 0.0806
+  w = 2: defect 0.0266    0.33x median   DIP
+  w = 3: defect 0.0093    0.12x median   DIP
+  w = 4: defect 0.0079    0.10x median   DIP
+  w = 5: defect 0.0070    0.09x median   DIP
+  w = 6: defect 0.0147    0.18x median   DIP
+
+  Dips at the integers = the network reproduces the equivariance;
+  a flat curve means it is fitting the surface pointwise.
+  Whether 'found it unaided' follows depends on how the model's w
+  was SAMPLED. neural_dynamics draws w continuously, so for those
+  checkpoints it does. A model trained with an integer-anchored
+  sampler was shown the lattice, and this plot cannot tell the
+  difference -- compare against the true-map curve, not the median.
+
+Wrote to harm_random_s2/
+########## basis=none seed=2 ##########
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+Sampling real orbits...
+  411,510 orbit-visited states
+  target variance 4.3372
+  251,523 parameters
+  seed 2 | angular basis 'none': (none - raw theta only)
+
+[  1/300] loss=6.9461e-01 R2=0.83985  1s
+[  5/300] loss=3.4316e-02 R2=0.99209  5s
+[ 10/300] loss=9.9756e-03 R2=0.99770  11s
+[ 15/300] loss=4.8564e-03 R2=0.99888  16s
+[ 20/300] loss=2.9733e-03 R2=0.99931  21s
+[ 25/300] loss=2.0530e-03 R2=0.99953  26s
+[ 30/300] loss=1.5717e-03 R2=0.99964  31s
+[ 35/300] loss=1.2545e-03 R2=0.99971  37s
+[ 40/300] loss=1.0008e-03 R2=0.99977  42s
+[ 45/300] loss=8.7963e-04 R2=0.99980  47s
+[ 50/300] loss=7.4494e-04 R2=0.99983  52s
+[ 55/300] loss=7.6850e-04 R2=0.99982  59s
+[ 60/300] loss=6.3448e-04 R2=0.99985  64s
+[ 65/300] loss=5.6734e-04 R2=0.99987  69s
+[ 70/300] loss=5.0832e-04 R2=0.99988  74s
+[ 75/300] loss=4.4607e-04 R2=0.99990  79s
+[ 80/300] loss=4.1214e-04 R2=0.99990  85s
+[ 85/300] loss=3.9152e-04 R2=0.99991  90s
+[ 90/300] loss=3.3323e-04 R2=0.99992  95s
+[ 95/300] loss=2.8785e-04 R2=0.99993  100s
+[100/300] loss=2.7060e-04 R2=0.99994  105s
+[105/300] loss=2.5312e-04 R2=0.99994  111s
+[110/300] loss=2.4127e-04 R2=0.99994  116s
+[115/300] loss=2.2903e-04 R2=0.99995  121s
+[120/300] loss=1.9111e-04 R2=0.99996  126s
+[125/300] loss=1.9475e-04 R2=0.99996  131s
+[130/300] loss=1.7134e-04 R2=0.99996  137s
+[135/300] loss=1.7746e-04 R2=0.99996  142s
+[140/300] loss=1.5987e-04 R2=0.99996  147s
+[145/300] loss=1.3259e-04 R2=0.99997  152s
+[150/300] loss=1.3367e-04 R2=0.99997  157s
+[155/300] loss=1.2321e-04 R2=0.99997  163s
+[160/300] loss=1.0271e-04 R2=0.99998  168s
+[165/300] loss=1.1008e-04 R2=0.99997  173s
+[170/300] loss=9.4629e-05 R2=0.99998  178s
+[175/300] loss=8.4180e-05 R2=0.99998  184s
+[180/300] loss=1.0677e-04 R2=0.99998  189s
+[185/300] loss=7.3654e-05 R2=0.99998  195s
+[190/300] loss=6.8483e-05 R2=0.99998  200s
+[195/300] loss=6.5148e-05 R2=0.99998  205s
+[200/300] loss=6.9350e-05 R2=0.99998  210s
+[205/300] loss=5.5768e-05 R2=0.99999  215s
+[210/300] loss=5.5605e-05 R2=0.99999  220s
+[215/300] loss=4.9490e-05 R2=0.99999  225s
+[220/300] loss=4.7895e-05 R2=0.99999  231s
+[225/300] loss=4.4422e-05 R2=0.99999  236s
+[230/300] loss=4.3367e-05 R2=0.99999  241s
+[235/300] loss=3.9377e-05 R2=0.99999  246s
+[240/300] loss=3.8296e-05 R2=0.99999  251s
+[245/300] loss=3.6533e-05 R2=0.99999  257s
+[250/300] loss=3.5451e-05 R2=0.99999  262s
+[255/300] loss=3.3931e-05 R2=0.99999  267s
+[260/300] loss=3.2817e-05 R2=0.99999  272s
+[265/300] loss=3.2032e-05 R2=0.99999  278s
+[270/300] loss=3.1255e-05 R2=0.99999  283s
+[275/300] loss=3.0668e-05 R2=0.99999  289s
+[280/300] loss=3.0186e-05 R2=0.99999  295s
+[285/300] loss=2.9833e-05 R2=0.99999  300s
+[290/300] loss=2.9528e-05 R2=0.99999  305s
+[295/300] loss=2.9358e-05 R2=0.99999  311s
+[300/300] loss=2.9290e-05 R2=0.99999  316s
+
+Saved harm_none_s2/map.npz
+
+Rendering the network's own Mandelbrot set...
+  iterating the LEARNED map, w=2.0...
+  interior IoU            : 0.9042
+  escape-time MAE         : 0.0176
+  set disagreement        : 1.64% of plane
+  wrote harm_none_s2/neural_mandelbrot.png and neural_julia.png
+----- symmetry sweep: basis=none seed=2 -----
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+
+C_w SYMMETRY DEFECT at w = 2.0
+  true map    : 1.448e-16
+  learned map : 0.0377
+
+  median defect across w : 0.1399
+  w = 2: defect 0.0377    0.27x median   DIP
+  w = 3: defect 0.0149    0.11x median   DIP
+  w = 4: defect 0.0121    0.09x median   DIP
+  w = 5: defect 2.6236   18.75x median   peak
+  w = 6: defect 0.0242    0.17x median   DIP
+
+  Dips at the integers = the network reproduces the equivariance;
+  a flat curve means it is fitting the surface pointwise.
+  Whether 'found it unaided' follows depends on how the model's w
+  was SAMPLED. neural_dynamics draws w continuously, so for those
+  checkpoints it does. A model trained with an integer-anchored
+  sampler was shown the lattice, and this plot cannot tell the
+  difference -- compare against the true-map curve, not the median.
+
+Wrote to harm_none_s2/

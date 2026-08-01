@@ -1,0 +1,568 @@
+##### UNIFORM seed 4 (no lattice at all) #####
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+seed 4 | w in [1.5, 6.5] | sampler uniform phase +0.00
+
+Generating 300,000 branch-cut samples...
+Dataset complete in 1.9s | inside=18.49% | slow boundary=14.90%
+params 365,186 | interior weight 4.41
+[  1/300] loss=0.915950 lr=3.00e-04 1s
+[  5/300] loss=0.374292 lr=3.00e-04 5s
+[ 10/300] loss=0.235651 lr=2.99e-04 11s
+[ 15/300] loss=0.170722 lr=2.98e-04 17s
+[ 20/300] loss=0.134368 lr=2.97e-04 22s
+[ 25/300] loss=0.109749 lr=2.95e-04 30s
+[ 30/300] loss=0.094407 lr=2.93e-04 43s
+[ 35/300] loss=0.083352 lr=2.90e-04 57s
+[ 40/300] loss=0.074776 lr=2.87e-04 71s
+[ 45/300] loss=0.067224 lr=2.84e-04 85s
+[ 50/300] loss=0.062217 lr=2.80e-04 98s
+[ 55/300] loss=0.058869 lr=2.76e-04 108s
+[ 60/300] loss=0.054506 lr=2.71e-04 120s
+[ 65/300] loss=0.050356 lr=2.67e-04 133s
+[ 70/300] loss=0.046538 lr=2.62e-04 147s
+[ 75/300] loss=0.045906 lr=2.56e-04 161s
+[ 80/300] loss=0.041862 lr=2.51e-04 174s
+[ 85/300] loss=0.039609 lr=2.45e-04 188s
+[ 90/300] loss=0.039447 lr=2.38e-04 202s
+[ 95/300] loss=0.037174 lr=2.32e-04 216s
+[100/300] loss=0.035119 lr=2.25e-04 231s
+[105/300] loss=0.033242 lr=2.18e-04 245s
+[110/300] loss=0.031601 lr=2.11e-04 259s
+[115/300] loss=0.031147 lr=2.04e-04 274s
+[120/300] loss=0.028939 lr=1.97e-04 288s
+[125/300] loss=0.028232 lr=1.89e-04 302s
+[130/300] loss=0.027428 lr=1.82e-04 316s
+[135/300] loss=0.026349 lr=1.74e-04 330s
+[140/300] loss=0.024747 lr=1.66e-04 343s
+[145/300] loss=0.023558 lr=1.58e-04 357s
+[150/300] loss=0.022484 lr=1.50e-04 370s
+[155/300] loss=0.021394 lr=1.43e-04 384s
+[160/300] loss=0.021397 lr=1.35e-04 398s
+[165/300] loss=0.019809 lr=1.27e-04 412s
+[170/300] loss=0.019952 lr=1.19e-04 426s
+[175/300] loss=0.017750 lr=1.12e-04 439s
+[180/300] loss=0.017348 lr=1.04e-04 453s
+[185/300] loss=0.016646 lr=9.69e-05 466s
+[190/300] loss=0.015896 lr=8.97e-05 480s
+[195/300] loss=0.015026 lr=8.26e-05 493s
+[200/300] loss=0.014526 lr=7.57e-05 507s
+[205/300] loss=0.014322 lr=6.91e-05 521s
+[210/300] loss=0.013735 lr=6.26e-05 534s
+[215/300] loss=0.013000 lr=5.64e-05 548s
+[220/300] loss=0.012657 lr=5.05e-05 561s
+[225/300] loss=0.012308 lr=4.48e-05 575s
+[230/300] loss=0.011879 lr=3.94e-05 588s
+[235/300] loss=0.011578 lr=3.43e-05 602s
+[240/300] loss=0.011095 lr=2.96e-05 616s
+[245/300] loss=0.010857 lr=2.51e-05 629s
+[250/300] loss=0.010630 lr=2.10e-05 642s
+[255/300] loss=0.010345 lr=1.73e-05 656s
+[260/300] loss=0.010203 lr=1.39e-05 665s
+[265/300] loss=0.010036 lr=1.09e-05 671s
+[270/300] loss=0.009882 lr=8.32e-06 676s
+[275/300] loss=0.009772 lr=6.09e-06 682s
+[280/300] loss=0.009726 lr=4.27e-06 694s
+[285/300] loss=0.009594 lr=2.84e-06 707s
+[290/300] loss=0.009563 lr=1.82e-06 721s
+[295/300] loss=0.009599 lr=1.20e-06 734s
+[300/300] loss=0.009509 lr=1.00e-06 748s
+DONE 748s -> ctl_uniform_s4/model.npz
+
+EMBEDDING CURVE (trained)
+  curve shape       : (5001, 1152)  (3 blocks x 2 x 192 dims)
+  sampled every     : 0.001 in w  (5001 points)
+  arc-length speed  : mean 0.1952  std 0.0209  median 0.1949
+     w    windowed   x median   pctile
+     2      0.2189      1.12x    85.4%
+     3      0.1822      0.93x    32.5%
+     4      0.1861      0.95x    39.1%
+     5      0.1996      1.02x    59.6%
+     6      0.1846      0.95x    35.8%
+
+  lattice phase test on [2, 3, 4, 5, 6]   [frozen metric v1]
+    window +/-0.05, offsets +/-0.4 step 0.001, linear interpolation
+    observed windowed speed : 0.1943
+    shifted-lattice null    : mean 0.1950  max 0.2073
+    phase_exceedance        : 0.5780   (rank, not a p-value)
+    best-fit offset         : -0.196  (0.000 = integers exactly optimal)
+
+    criterion: exceedance < 0.05 and |offset| <= 0.02  ->  FAIL
+
+  sampler: w_anchor_mode='uniform'  phase=+0.00
+    no lattice in the training distribution -- any alignment
+    here cannot be an artifact of input density.
+  wrote ctl_uniform_s4/embedding_curve.png
+##### PHASE 0.25 seed 4 (lattice off the integers) #####
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+seed 4 | w in [1.5, 6.5] | sampler anchored phase +0.25
+
+Generating 300,000 branch-cut samples...
+Dataset complete in 1.9s | inside=20.16% | slow boundary=14.31%
+params 365,186 | interior weight 3.96
+[  1/300] loss=0.913592 lr=3.00e-04 3s
+[  5/300] loss=0.334092 lr=3.00e-04 14s
+[ 10/300] loss=0.213181 lr=2.99e-04 28s
+[ 15/300] loss=0.158251 lr=2.98e-04 41s
+[ 20/300] loss=0.123387 lr=2.97e-04 55s
+[ 25/300] loss=0.102815 lr=2.95e-04 69s
+[ 30/300] loss=0.086168 lr=2.93e-04 83s
+[ 35/300] loss=0.075597 lr=2.90e-04 96s
+[ 40/300] loss=0.066241 lr=2.87e-04 110s
+[ 45/300] loss=0.060703 lr=2.84e-04 124s
+[ 50/300] loss=0.055567 lr=2.80e-04 138s
+[ 55/300] loss=0.050734 lr=2.76e-04 151s
+[ 60/300] loss=0.048093 lr=2.71e-04 165s
+[ 65/300] loss=0.045170 lr=2.67e-04 179s
+[ 70/300] loss=0.042311 lr=2.62e-04 192s
+[ 75/300] loss=0.040075 lr=2.56e-04 206s
+[ 80/300] loss=0.038047 lr=2.51e-04 220s
+[ 85/300] loss=0.036275 lr=2.45e-04 232s
+[ 90/300] loss=0.034179 lr=2.38e-04 238s
+[ 95/300] loss=0.032918 lr=2.32e-04 243s
+[100/300] loss=0.030986 lr=2.25e-04 254s
+[105/300] loss=0.029678 lr=2.18e-04 268s
+[110/300] loss=0.028748 lr=2.11e-04 281s
+[115/300] loss=0.027520 lr=2.04e-04 295s
+[120/300] loss=0.026553 lr=1.97e-04 308s
+[125/300] loss=0.024407 lr=1.89e-04 322s
+[130/300] loss=0.023884 lr=1.82e-04 335s
+[135/300] loss=0.022807 lr=1.74e-04 349s
+[140/300] loss=0.021799 lr=1.66e-04 362s
+[145/300] loss=0.020973 lr=1.58e-04 376s
+[150/300] loss=0.020216 lr=1.50e-04 390s
+[155/300] loss=0.019536 lr=1.43e-04 403s
+[160/300] loss=0.018286 lr=1.35e-04 417s
+[165/300] loss=0.017365 lr=1.27e-04 430s
+[170/300] loss=0.016797 lr=1.19e-04 444s
+[175/300] loss=0.016101 lr=1.12e-04 457s
+[180/300] loss=0.015671 lr=1.04e-04 471s
+[185/300] loss=0.015111 lr=9.69e-05 484s
+[190/300] loss=0.014136 lr=8.97e-05 498s
+[195/300] loss=0.013853 lr=8.26e-05 512s
+[200/300] loss=0.013087 lr=7.57e-05 525s
+[205/300] loss=0.012802 lr=6.91e-05 539s
+[210/300] loss=0.012172 lr=6.26e-05 552s
+[215/300] loss=0.011817 lr=5.64e-05 566s
+[220/300] loss=0.011547 lr=5.05e-05 579s
+[225/300] loss=0.011222 lr=4.48e-05 593s
+[230/300] loss=0.010737 lr=3.94e-05 606s
+[235/300] loss=0.010397 lr=3.43e-05 620s
+[240/300] loss=0.010222 lr=2.96e-05 633s
+[245/300] loss=0.009946 lr=2.51e-05 646s
+[250/300] loss=0.009660 lr=2.10e-05 660s
+[255/300] loss=0.009462 lr=1.73e-05 673s
+[260/300] loss=0.009294 lr=1.39e-05 686s
+[265/300] loss=0.009133 lr=1.09e-05 700s
+[270/300] loss=0.008977 lr=8.32e-06 713s
+[275/300] loss=0.008897 lr=6.09e-06 727s
+[280/300] loss=0.008843 lr=4.27e-06 740s
+[285/300] loss=0.008759 lr=2.84e-06 753s
+[290/300] loss=0.008676 lr=1.82e-06 767s
+[295/300] loss=0.008624 lr=1.20e-06 780s
+[300/300] loss=0.008665 lr=1.00e-06 793s
+DONE 794s -> ctl_phase_s4/model.npz
+
+EMBEDDING CURVE (trained)
+  curve shape       : (5001, 1152)  (3 blocks x 2 x 192 dims)
+  sampled every     : 0.001 in w  (5001 points)
+  arc-length speed  : mean 0.1886  std 0.0324  median 0.1847
+     w    windowed   x median   pctile
+     2      0.1756      0.95x    38.1%
+     3      0.1473      0.80x     8.6%
+     4      0.1546      0.84x    15.3%
+     5      0.1687      0.91x    30.8%
+     6      0.1613      0.87x    22.6%
+
+  lattice phase test on [2, 3, 4, 5, 6]   [frozen metric v1]
+    window +/-0.05, offsets +/-0.4 step 0.001, linear interpolation
+    observed windowed speed : 0.1615
+    shifted-lattice null    : mean 0.1922  max 0.2389
+    phase_exceedance        : 0.9888   (rank, not a p-value)
+    best-fit offset         : +0.254  (0.000 = integers exactly optimal)
+
+    criterion: exceedance < 0.05 and |offset| <= 0.02  ->  FAIL
+
+  sampler: w_anchor_mode='anchored'  phase=+0.25
+    score at integers (offset 0.00) : 0.1615
+    score at sampler  (offset +0.25) : 0.2387
+    best offset +0.254 is nearer the SAMPLER lattice
+    -> learned the sampler
+  wrote ctl_phase_s4/embedding_curve.png
+##### ANCHORED seed 4 (corrected sampler, lattice on integers) #####
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+seed 4 | w in [1.5, 6.5] | sampler anchored phase +0.00
+
+Generating 300,000 branch-cut samples...
+Dataset complete in 1.9s | inside=19.85% | slow boundary=14.06%
+params 365,186 | interior weight 4.04
+[  1/300] loss=0.884705 lr=3.00e-04 3s
+[  5/300] loss=0.320616 lr=3.00e-04 14s
+[ 10/300] loss=0.201775 lr=2.99e-04 27s
+[ 15/300] loss=0.147136 lr=2.98e-04 40s
+[ 20/300] loss=0.113112 lr=2.97e-04 54s
+[ 25/300] loss=0.093497 lr=2.95e-04 67s
+[ 30/300] loss=0.081600 lr=2.93e-04 80s
+[ 35/300] loss=0.070780 lr=2.90e-04 94s
+[ 40/300] loss=0.063790 lr=2.87e-04 107s
+[ 45/300] loss=0.057443 lr=2.84e-04 120s
+[ 50/300] loss=0.053433 lr=2.80e-04 134s
+[ 55/300] loss=0.050378 lr=2.76e-04 147s
+[ 60/300] loss=0.045680 lr=2.71e-04 161s
+[ 65/300] loss=0.042062 lr=2.67e-04 174s
+[ 70/300] loss=0.040948 lr=2.62e-04 187s
+[ 75/300] loss=0.037518 lr=2.56e-04 200s
+[ 80/300] loss=0.036129 lr=2.51e-04 214s
+[ 85/300] loss=0.033895 lr=2.45e-04 227s
+[ 90/300] loss=0.032471 lr=2.38e-04 241s
+[ 95/300] loss=0.030450 lr=2.32e-04 254s
+[100/300] loss=0.029230 lr=2.25e-04 267s
+[105/300] loss=0.028250 lr=2.18e-04 281s
+[110/300] loss=0.026020 lr=2.11e-04 294s
+[115/300] loss=0.025114 lr=2.04e-04 307s
+[120/300] loss=0.023815 lr=1.97e-04 320s
+[125/300] loss=0.023458 lr=1.89e-04 334s
+[130/300] loss=0.022096 lr=1.82e-04 347s
+[135/300] loss=0.021111 lr=1.74e-04 360s
+[140/300] loss=0.020961 lr=1.66e-04 373s
+[145/300] loss=0.019487 lr=1.58e-04 386s
+[150/300] loss=0.018722 lr=1.50e-04 400s
+[155/300] loss=0.017986 lr=1.43e-04 413s
+[160/300] loss=0.017256 lr=1.35e-04 426s
+[165/300] loss=0.016454 lr=1.27e-04 440s
+[170/300] loss=0.015987 lr=1.19e-04 453s
+[175/300] loss=0.015195 lr=1.12e-04 466s
+[180/300] loss=0.014634 lr=1.04e-04 480s
+[185/300] loss=0.013783 lr=9.69e-05 493s
+[190/300] loss=0.013045 lr=8.97e-05 506s
+[195/300] loss=0.012607 lr=8.26e-05 520s
+[200/300] loss=0.012050 lr=7.57e-05 533s
+[205/300] loss=0.011864 lr=6.91e-05 546s
+[210/300] loss=0.011184 lr=6.26e-05 559s
+[215/300] loss=0.010694 lr=5.64e-05 573s
+[220/300] loss=0.010393 lr=5.05e-05 586s
+[225/300] loss=0.010158 lr=4.48e-05 599s
+[230/300] loss=0.009672 lr=3.94e-05 613s
+[235/300] loss=0.009560 lr=3.43e-05 626s
+[240/300] loss=0.009164 lr=2.96e-05 639s
+[245/300] loss=0.008977 lr=2.51e-05 653s
+[250/300] loss=0.008701 lr=2.10e-05 666s
+[255/300] loss=0.008492 lr=1.73e-05 679s
+[260/300] loss=0.008291 lr=1.39e-05 692s
+[265/300] loss=0.008177 lr=1.09e-05 706s
+[270/300] loss=0.008027 lr=8.32e-06 719s
+[275/300] loss=0.007942 lr=6.09e-06 732s
+[280/300] loss=0.007934 lr=4.27e-06 746s
+[285/300] loss=0.007820 lr=2.84e-06 759s
+[290/300] loss=0.007767 lr=1.82e-06 772s
+[295/300] loss=0.007743 lr=1.20e-06 785s
+[300/300] loss=0.007733 lr=1.00e-06 798s
+DONE 798s -> ctl_anchored_s4/model.npz
+
+EMBEDDING CURVE (trained)
+  curve shape       : (5001, 1152)  (3 blocks x 2 x 192 dims)
+  sampled every     : 0.001 in w  (5001 points)
+  arc-length speed  : mean 0.1869  std 0.0293  median 0.1849
+     w    windowed   x median   pctile
+     2      0.2510      1.36x    97.2%
+     3      0.2259      1.22x    89.5%
+     4      0.2330      1.26x    91.8%
+     5      0.2173      1.18x    84.4%
+     6      0.2245      1.21x    89.1%
+
+  lattice phase test on [2, 3, 4, 5, 6]   [frozen metric v1]
+    window +/-0.05, offsets +/-0.4 step 0.001, linear interpolation
+    observed windowed speed : 0.2303
+    shifted-lattice null    : mean 0.1847  max 0.2305
+    phase_exceedance        : 0.0137   (rank, not a p-value)
+    best-fit offset         : -0.005  (0.000 = integers exactly optimal)
+
+    criterion: exceedance < 0.05 and |offset| <= 0.02  ->  PASS
+
+  sampler: w_anchor_mode='anchored'  phase=+0.00
+    score at integers (offset 0.00) : 0.2303
+    score at sampler  (offset +0.00) : 0.2303
+  wrote ctl_anchored_s4/embedding_curve.png
+##### UNIFORM seed 5 (no lattice at all) #####
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+seed 5 | w in [1.5, 6.5] | sampler uniform phase +0.00
+
+Generating 300,000 branch-cut samples...
+Dataset complete in 1.8s | inside=18.35% | slow boundary=14.81%
+params 365,186 | interior weight 4.45
+[  1/300] loss=0.916528 lr=3.00e-04 3s
+[  5/300] loss=0.377634 lr=3.00e-04 13s
+[ 10/300] loss=0.239251 lr=2.99e-04 26s
+[ 15/300] loss=0.170733 lr=2.98e-04 39s
+[ 20/300] loss=0.133865 lr=2.97e-04 52s
+[ 25/300] loss=0.107906 lr=2.95e-04 65s
+[ 30/300] loss=0.092195 lr=2.93e-04 77s
+[ 35/300] loss=0.080914 lr=2.90e-04 90s
+[ 40/300] loss=0.074231 lr=2.87e-04 103s
+[ 45/300] loss=0.068745 lr=2.84e-04 116s
+[ 50/300] loss=0.060688 lr=2.80e-04 129s
+[ 55/300] loss=0.056243 lr=2.76e-04 142s
+[ 60/300] loss=0.053968 lr=2.71e-04 155s
+[ 65/300] loss=0.050401 lr=2.67e-04 168s
+[ 70/300] loss=0.046820 lr=2.62e-04 181s
+[ 75/300] loss=0.045046 lr=2.56e-04 194s
+[ 80/300] loss=0.043346 lr=2.51e-04 206s
+[ 85/300] loss=0.039050 lr=2.45e-04 219s
+[ 90/300] loss=0.038209 lr=2.38e-04 232s
+[ 95/300] loss=0.036419 lr=2.32e-04 245s
+[100/300] loss=0.034692 lr=2.25e-04 258s
+[105/300] loss=0.034142 lr=2.18e-04 271s
+[110/300] loss=0.031593 lr=2.11e-04 284s
+[115/300] loss=0.029405 lr=2.04e-04 297s
+[120/300] loss=0.028785 lr=1.97e-04 310s
+[125/300] loss=0.028389 lr=1.89e-04 323s
+[130/300] loss=0.025948 lr=1.82e-04 336s
+[135/300] loss=0.024949 lr=1.74e-04 349s
+[140/300] loss=0.023332 lr=1.66e-04 362s
+[145/300] loss=0.022786 lr=1.58e-04 374s
+[150/300] loss=0.021646 lr=1.50e-04 387s
+[155/300] loss=0.021274 lr=1.43e-04 400s
+[160/300] loss=0.019493 lr=1.35e-04 413s
+[165/300] loss=0.019209 lr=1.27e-04 426s
+[170/300] loss=0.017987 lr=1.19e-04 439s
+[175/300] loss=0.017283 lr=1.12e-04 451s
+[180/300] loss=0.016642 lr=1.04e-04 464s
+[185/300] loss=0.015857 lr=9.69e-05 477s
+[190/300] loss=0.015369 lr=8.97e-05 490s
+[195/300] loss=0.014517 lr=8.26e-05 503s
+[200/300] loss=0.013994 lr=7.57e-05 516s
+[205/300] loss=0.013380 lr=6.91e-05 529s
+[210/300] loss=0.013027 lr=6.26e-05 541s
+[215/300] loss=0.012381 lr=5.64e-05 554s
+[220/300] loss=0.011994 lr=5.05e-05 567s
+[225/300] loss=0.011605 lr=4.48e-05 580s
+[230/300] loss=0.011075 lr=3.94e-05 593s
+[235/300] loss=0.010843 lr=3.43e-05 605s
+[240/300] loss=0.010502 lr=2.96e-05 618s
+[245/300] loss=0.010168 lr=2.51e-05 631s
+[250/300] loss=0.009948 lr=2.10e-05 644s
+[255/300] loss=0.009662 lr=1.73e-05 656s
+[260/300] loss=0.009478 lr=1.39e-05 669s
+[265/300] loss=0.009342 lr=1.09e-05 682s
+[270/300] loss=0.009192 lr=8.32e-06 695s
+[275/300] loss=0.009091 lr=6.09e-06 709s
+[280/300] loss=0.008981 lr=4.27e-06 717s
+[285/300] loss=0.008983 lr=2.84e-06 722s
+[290/300] loss=0.008869 lr=1.82e-06 727s
+[295/300] loss=0.008870 lr=1.20e-06 733s
+[300/300] loss=0.008847 lr=1.00e-06 739s
+DONE 739s -> ctl_uniform_s5/model.npz
+
+EMBEDDING CURVE (trained)
+  curve shape       : (5001, 1152)  (3 blocks x 2 x 192 dims)
+  sampled every     : 0.001 in w  (5001 points)
+  arc-length speed  : mean 0.2007  std 0.0219  median 0.1999
+     w    windowed   x median   pctile
+     2      0.2518      1.26x    97.9%
+     3      0.1980      0.99x    45.3%
+     4      0.2168      1.08x    78.0%
+     5      0.1872      0.94x    25.1%
+     6      0.1991      1.00x    47.1%
+
+  lattice phase test on [2, 3, 4, 5, 6]   [frozen metric v1]
+    window +/-0.05, offsets +/-0.4 step 0.001, linear interpolation
+    observed windowed speed : 0.2106
+    shifted-lattice null    : mean 0.2025  max 0.2120
+    phase_exceedance        : 0.0437   (rank, not a p-value)
+    best-fit offset         : +0.018  (0.000 = integers exactly optimal)
+
+    criterion: exceedance < 0.05 and |offset| <= 0.02  ->  PASS
+
+  sampler: w_anchor_mode='uniform'  phase=+0.00
+    no lattice in the training distribution -- any alignment
+    here cannot be an artifact of input density.
+  wrote ctl_uniform_s5/embedding_curve.png
+##### PHASE 0.25 seed 5 (lattice off the integers) #####
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+seed 5 | w in [1.5, 6.5] | sampler anchored phase +0.25
+
+Generating 300,000 branch-cut samples...
+Dataset complete in 2.3s | inside=20.20% | slow boundary=14.61%
+params 365,186 | interior weight 3.95
+[  1/300] loss=0.905766 lr=3.00e-04 1s
+[  5/300] loss=0.341715 lr=3.00e-04 6s
+[ 10/300] loss=0.219735 lr=2.99e-04 12s
+[ 15/300] loss=0.161484 lr=2.98e-04 25s
+[ 20/300] loss=0.128200 lr=2.97e-04 39s
+[ 25/300] loss=0.106110 lr=2.95e-04 53s
+[ 30/300] loss=0.089287 lr=2.93e-04 66s
+[ 35/300] loss=0.079099 lr=2.90e-04 79s
+[ 40/300] loss=0.070737 lr=2.87e-04 92s
+[ 45/300] loss=0.063597 lr=2.84e-04 105s
+[ 50/300] loss=0.057483 lr=2.80e-04 118s
+[ 55/300] loss=0.054902 lr=2.76e-04 132s
+[ 60/300] loss=0.048939 lr=2.71e-04 145s
+[ 65/300] loss=0.047077 lr=2.67e-04 158s
+[ 70/300] loss=0.043728 lr=2.62e-04 171s
+[ 75/300] loss=0.041460 lr=2.56e-04 185s
+[ 80/300] loss=0.038760 lr=2.51e-04 198s
+[ 85/300] loss=0.037821 lr=2.45e-04 211s
+[ 90/300] loss=0.034293 lr=2.38e-04 224s
+[ 95/300] loss=0.033384 lr=2.32e-04 237s
+[100/300] loss=0.031937 lr=2.25e-04 251s
+[105/300] loss=0.030978 lr=2.18e-04 264s
+[110/300] loss=0.029850 lr=2.11e-04 277s
+[115/300] loss=0.028174 lr=2.04e-04 290s
+[120/300] loss=0.026399 lr=1.97e-04 303s
+[125/300] loss=0.024561 lr=1.89e-04 316s
+[130/300] loss=0.024499 lr=1.82e-04 329s
+[135/300] loss=0.022926 lr=1.74e-04 343s
+[140/300] loss=0.021839 lr=1.66e-04 356s
+[145/300] loss=0.020805 lr=1.58e-04 369s
+[150/300] loss=0.019880 lr=1.50e-04 382s
+[155/300] loss=0.019545 lr=1.43e-04 395s
+[160/300] loss=0.018899 lr=1.35e-04 409s
+[165/300] loss=0.018000 lr=1.27e-04 422s
+[170/300] loss=0.017010 lr=1.19e-04 435s
+[175/300] loss=0.016185 lr=1.12e-04 448s
+[180/300] loss=0.015602 lr=1.04e-04 461s
+[185/300] loss=0.015166 lr=9.69e-05 474s
+[190/300] loss=0.014388 lr=8.97e-05 488s
+[195/300] loss=0.014027 lr=8.26e-05 501s
+[200/300] loss=0.013247 lr=7.57e-05 514s
+[205/300] loss=0.012990 lr=6.91e-05 527s
+[210/300] loss=0.012377 lr=6.26e-05 540s
+[215/300] loss=0.011931 lr=5.64e-05 553s
+[220/300] loss=0.011480 lr=5.05e-05 567s
+[225/300] loss=0.011029 lr=4.48e-05 580s
+[230/300] loss=0.010737 lr=3.94e-05 593s
+[235/300] loss=0.010513 lr=3.43e-05 606s
+[240/300] loss=0.010259 lr=2.96e-05 619s
+[245/300] loss=0.009937 lr=2.51e-05 632s
+[250/300] loss=0.009793 lr=2.10e-05 646s
+[255/300] loss=0.009460 lr=1.73e-05 659s
+[260/300] loss=0.009323 lr=1.39e-05 672s
+[265/300] loss=0.009177 lr=1.09e-05 685s
+[270/300] loss=0.009072 lr=8.32e-06 698s
+[275/300] loss=0.008950 lr=6.09e-06 711s
+[280/300] loss=0.008846 lr=4.27e-06 724s
+[285/300] loss=0.008777 lr=2.84e-06 737s
+[290/300] loss=0.008773 lr=1.82e-06 751s
+[295/300] loss=0.008687 lr=1.20e-06 764s
+[300/300] loss=0.008679 lr=1.00e-06 777s
+DONE 778s -> ctl_phase_s5/model.npz
+
+EMBEDDING CURVE (trained)
+  curve shape       : (5001, 1152)  (3 blocks x 2 x 192 dims)
+  sampled every     : 0.001 in w  (5001 points)
+  arc-length speed  : mean 0.1968  std 0.0330  median 0.1927
+     w    windowed   x median   pctile
+     2      0.2293      1.19x    84.7%
+     3      0.1721      0.89x    21.6%
+     4      0.1917      0.99x    47.3%
+     5      0.1756      0.91x    25.4%
+     6      0.1754      0.91x    25.3%
+
+  lattice phase test on [2, 3, 4, 5, 6]   [frozen metric v1]
+    window +/-0.05, offsets +/-0.4 step 0.001, linear interpolation
+    observed windowed speed : 0.1888
+    shifted-lattice null    : mean 0.2021  max 0.2518
+    phase_exceedance        : 0.7491   (rank, not a p-value)
+    best-fit offset         : +0.249  (0.000 = integers exactly optimal)
+
+    criterion: exceedance < 0.05 and |offset| <= 0.02  ->  FAIL
+
+  sampler: w_anchor_mode='anchored'  phase=+0.25
+    score at integers (offset 0.00) : 0.1888
+    score at sampler  (offset +0.25) : 0.2518
+    best offset +0.249 is nearer the SAMPLER lattice
+    -> learned the sampler
+  wrote ctl_phase_s5/embedding_curve.png
+##### ANCHORED seed 5 (corrected sampler, lattice on integers) #####
+🚀  CuPy / GPU mode — NVIDIA GeForce RTX 5070, sm_120, 10.8/11.9 GiB free
+seed 5 | w in [1.5, 6.5] | sampler anchored phase +0.00
+
+Generating 300,000 branch-cut samples...
+Dataset complete in 1.8s | inside=19.64% | slow boundary=14.02%
+params 365,186 | interior weight 4.09
+[  1/300] loss=0.873868 lr=3.00e-04 3s
+[  5/300] loss=0.319969 lr=3.00e-04 13s
+[ 10/300] loss=0.198424 lr=2.99e-04 26s
+[ 15/300] loss=0.144046 lr=2.98e-04 39s
+[ 20/300] loss=0.113877 lr=2.97e-04 52s
+[ 25/300] loss=0.092297 lr=2.95e-04 65s
+[ 30/300] loss=0.081191 lr=2.93e-04 78s
+[ 35/300] loss=0.070330 lr=2.90e-04 92s
+[ 40/300] loss=0.062984 lr=2.87e-04 105s
+[ 45/300] loss=0.057564 lr=2.84e-04 118s
+[ 50/300] loss=0.052035 lr=2.80e-04 131s
+[ 55/300] loss=0.049226 lr=2.76e-04 144s
+[ 60/300] loss=0.044305 lr=2.71e-04 157s
+[ 65/300] loss=0.042514 lr=2.67e-04 170s
+[ 70/300] loss=0.041859 lr=2.62e-04 183s
+[ 75/300] loss=0.038005 lr=2.56e-04 196s
+[ 80/300] loss=0.035434 lr=2.51e-04 209s
+[ 85/300] loss=0.034110 lr=2.45e-04 223s
+[ 90/300] loss=0.031826 lr=2.38e-04 236s
+[ 95/300] loss=0.030863 lr=2.32e-04 249s
+[100/300] loss=0.029003 lr=2.25e-04 262s
+[105/300] loss=0.027628 lr=2.18e-04 275s
+[110/300] loss=0.027004 lr=2.11e-04 289s
+[115/300] loss=0.024782 lr=2.04e-04 301s
+[120/300] loss=0.024071 lr=1.97e-04 314s
+[125/300] loss=0.023261 lr=1.89e-04 327s
+[130/300] loss=0.021987 lr=1.82e-04 340s
+[135/300] loss=0.021036 lr=1.74e-04 353s
+[140/300] loss=0.020059 lr=1.66e-04 366s
+[145/300] loss=0.019294 lr=1.58e-04 379s
+[150/300] loss=0.017775 lr=1.50e-04 392s
+[155/300] loss=0.017447 lr=1.43e-04 405s
+[160/300] loss=0.016512 lr=1.35e-04 418s
+[165/300] loss=0.016318 lr=1.27e-04 431s
+[170/300] loss=0.015459 lr=1.19e-04 444s
+[175/300] loss=0.014779 lr=1.12e-04 457s
+[180/300] loss=0.014017 lr=1.04e-04 470s
+[185/300] loss=0.013479 lr=9.69e-05 483s
+[190/300] loss=0.012868 lr=8.97e-05 495s
+[195/300] loss=0.012564 lr=8.26e-05 508s
+[200/300] loss=0.011911 lr=7.57e-05 521s
+[205/300] loss=0.011490 lr=6.91e-05 534s
+[210/300] loss=0.011085 lr=6.26e-05 547s
+[215/300] loss=0.010845 lr=5.64e-05 560s
+[220/300] loss=0.010171 lr=5.05e-05 573s
+[225/300] loss=0.009860 lr=4.48e-05 586s
+[230/300] loss=0.009455 lr=3.94e-05 599s
+[235/300] loss=0.009190 lr=3.43e-05 612s
+[240/300] loss=0.008970 lr=2.96e-05 625s
+[245/300] loss=0.008877 lr=2.51e-05 638s
+[250/300] loss=0.008598 lr=2.10e-05 651s
+[255/300] loss=0.008334 lr=1.73e-05 664s
+[260/300] loss=0.008159 lr=1.39e-05 677s
+[265/300] loss=0.008084 lr=1.09e-05 690s
+[270/300] loss=0.007944 lr=8.32e-06 703s
+[275/300] loss=0.007829 lr=6.09e-06 716s
+[280/300] loss=0.007728 lr=4.27e-06 729s
+[285/300] loss=0.007682 lr=2.84e-06 742s
+[290/300] loss=0.007639 lr=1.82e-06 755s
+[295/300] loss=0.007628 lr=1.20e-06 768s
+[300/300] loss=0.007614 lr=1.00e-06 780s
+DONE 781s -> ctl_anchored_s5/model.npz
+
+EMBEDDING CURVE (trained)
+  curve shape       : (5001, 1152)  (3 blocks x 2 x 192 dims)
+  sampled every     : 0.001 in w  (5001 points)
+  arc-length speed  : mean 0.1887  std 0.0328  median 0.1823
+     w    windowed   x median   pctile
+     2      0.2736      1.50x    97.5%
+     3      0.2417      1.33x    92.6%
+     4      0.2588      1.42x    96.0%
+     5      0.2244      1.23x    84.9%
+     6      0.2249      1.23x    85.0%
+
+  lattice phase test on [2, 3, 4, 5, 6]   [frozen metric v1]
+    window +/-0.05, offsets +/-0.4 step 0.001, linear interpolation
+    observed windowed speed : 0.2447
+    shifted-lattice null    : mean 0.1885  max 0.2452
+    phase_exceedance        : 0.0175   (rank, not a p-value)
+    best-fit offset         : +0.007  (0.000 = integers exactly optimal)
+
+    criterion: exceedance < 0.05 and |offset| <= 0.02  ->  PASS
+
+  sampler: w_anchor_mode='anchored'  phase=+0.00
+    score at integers (offset 0.00) : 0.2447
+    score at sampler  (offset +0.00) : 0.2447
+  wrote ctl_anchored_s5/embedding_curve.png

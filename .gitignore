@@ -1,0 +1,50 @@
+# ---------------------------------------------------------------------------
+# Trained weights and rendered output are regenerable and large: the full set
+# of run directories is ~1 GB, dominated by 603 MB of escape-model checkpoints
+# and a 42 MB animation. Everything here can be rebuilt from the scripts, and
+# every checkpoint now carries its own w-audit so provenance travels with it.
+# Curated result figures live in figures/ and ARE tracked.
+# ---------------------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# model weights / metrics
+*.npz
+*.gif
+
+# run directories (script-generated)
+branch_cut_outputs/
+run/
+run_film/
+run_film_s*/
+run_film_wide_s*/
+ctl_uniform_s*/
+ctl_phase_s*/
+ctl_anchored_s*/
+harm_integer_s*/
+harm_shifted_s*/
+harm_random_s*/
+harm_none_s*/
+crx_w*/
+dyn/
+dyn_w2/
+dyn_w26/
+zoom_out/
+symmetry/
+symmetry_w26/
+differential/
+
+# scratch
+_*/
+*.tmp
+
+# rendered PNGs anywhere except the curated figures directory
+*.png
+!figures/*.png
+
+# local agent/editor state
+.claude/
