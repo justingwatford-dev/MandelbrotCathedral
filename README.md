@@ -133,21 +133,42 @@ python3 zoom_probe.py --checkpoint run/model.npz --render
 reproduces this to 4 significant figures (0.018478, 189.4), so the ceiling is
 a property of the encoder, not of any particular training run.
 
-**Measured:**
+**Measured, two independent runs of `train_small.py` on the same machine**
+(one CPU core, identical seed and script; run 1 is `zoom_metrics.json` from
+2026-08-01, run 2 is `zoom_metrics_run2.json` from 2026-09-18):
 
-| zoom | MAE | corr | cycles truth | cycles net |
-|-----:|----:|-----:|-------------:|-----------:|
-| 1x | 0.032 | +0.959 | 7 | 6 |
-| 10x | 0.082 | +0.778 | 9 | 17 |
-| 50x | 0.280 | +0.416 | 7 | 5 |
-| 100x | 0.453 | **-0.030** | 7 | 6 |
-| 200x | 0.496 | -0.416 | 14 | 6 |
-| 1000x | 0.642 | +0.222 | 51 | 7 |
+| zoom | MAE r1 / r2 | corr r1 / r2 | cycles truth r1 / r2 | cycles net r1 / r2 |
+|-----:|------------:|-------------:|---------------------:|-------------------:|
+| 1x | 0.032 / 0.032 | +0.959 / +0.963 | 7 / 7 | 6 / 6 |
+| 10x | 0.082 / 0.080 | +0.778 / +0.787 | 9 / 9 | 17 / 14 |
+| 50x | 0.280 / 0.255 | +0.416 / +0.503 | 7 / 7 | 5 / 4 |
+| 100x | 0.453 / 0.425 | **-0.030 / +0.167** | 7 / 6 | 6 / 7 |
+| 200x | 0.496 / 0.463 | -0.416 / -0.358 | 14 / 14 | 6 / 9 |
+| 500x | 0.523 / 0.523 | -0.037 / -0.158 | 37 / 41 | 8 / 5 |
+| 1000x | 0.642 / 0.640 | +0.222 / -0.148 | 51 / 58 | 7 / 5 |
 
-Correlation crosses zero at **100x**, against a predicted 189x — same order,
-2x early. Truth's structure *grows* under zoom, as a self-similar object must
-(7 -> 14 -> 37 -> 51 cycles). The network's stays pinned at 6-8 the whole way.
-That divergence is the result.
+**The seed does not pin the crossing.** Run 1 crosses zero at ~100x; run 2 at
+~130x (interpolating +0.167 at 100x to -0.358 at 200x). Same seed, same
+script, same machine — the drift is float32 accumulation order across 40
+epochs, not a cross-machine artifact. So the result is a band, not a number:
+**correlation dies between roughly 100x and 130x, against a predicted 189x —
+same order, 1.4–2x early.** Agreement out to 20x is within 0.02 in
+correlation, and `truth_std` matches to three decimals at every zoom, so the
+ground truth is the same field both times; it is the *model* that differs.
+
+Truth's structure *grows* under zoom, as a self-similar object must (14 -> 37
+-> 51 cycles in run 1, 14 -> 41 -> 58 in run 2; the 90%-energy bin is an
+integer statistic and shifts by a bin or two at deep zoom). The network's does
+not grow: 5–9 cycles from 200x onward in both runs. That divergence is the
+result.
+
+> An earlier version of this section said the crossing was "at 100x" and
+> that the network's cycle count "stays pinned at 6-8 the whole way". The
+> first was one run stated as if it were the seed's property; the second was
+> contradicted by this table's own 10x row (17) before run 2 existed. Both
+> corrected 2026-09-18 after the re-run. The correlation signs at 500x and
+> 1000x also flip between runs; at those zooms the model is noise, and a
+> sign there should not be read as anything.
 
 ### Two things that did not work
 
@@ -875,8 +896,8 @@ unchanged. Above 1e-3 the constraint starts being paid for.
 
 Sections 1, 2 and the 22-epoch numbers in 3: one CPU core, 251k-param escape
 model on 100k samples for 40 epochs, learned map 22 epochs at fixed w=2
-(superseded — see #3). The 100x death point in particular will move with
-model capacity.
+(superseded — see #3). The 100–130x death point in particular will move with
+model capacity, and moves between runs of the same seed already (see #2).
 
 The trained results in 3, 4 and 5 are GPU runs on the 5070: `dyn_w26` 1000
 epochs / 48k orbits (~87 min), `run_film` 300 epochs / 300k samples (~12 min).
