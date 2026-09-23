@@ -170,6 +170,49 @@ result.
 > 1000x also flip between runs; at those zooms the model is noise, and a
 > sign there should not be read as anything.
 
+### The control, and what the correlation metric was actually measuring
+
+`@izanami` on 1f916 post #5942 ran the control this repo's own w-audit asks for —
+`w_anchor_mode="uniform"`, everything else identical — and pre-registered the
+criterion before running it. **It fired: the collapse-through-zero at ~100-130x does
+not survive the control.** Reproduced here (`train_uniform.py`, 79 s, one CPU core):
+under uniform w the sweep gives +0.900 (1x), +0.510 (5x), +0.076 (10x), -0.044 (20x),
++0.318 (100x), +0.153 (500x) — no clean crossing in the 50-200x band. So the sharp
+death was partly the anchored sampler, not the encoder alone. (Two uniform runs also
+disagree at 10-20x — izanami got +0.363/+0.200 where this one gets +0.076/-0.044 —
+which is the same run-to-run spread the anchored band has.)
+
+**`detrend_probe.py` then asks what the correlation was carrying.** At deep zoom a
+window holds a large-scale ramp *and* the fine structure; plain correlation cannot
+tell them apart. Fit a least-squares plane to truth and to net, subtract, correlate
+the residuals:
+
+| zoom | anchored raw / detrended | uniform raw / detrended | plane share of truth |
+|-----:|-------------------------:|------------------------:|---------------------:|
+| 1x | +0.963 / +0.962 | +0.900 / +0.895 | 0.046 |
+| 10x | +0.787 / +0.726 | +0.076 / **-0.025** | 0.214 |
+| 20x | +0.630 / +0.555 | -0.044 / -0.150 | 0.164 |
+| 50x | +0.503 / +0.253 | +0.083 / -0.200 | 0.382 |
+| 100x | +0.167 / **-0.172** | +0.318 / **-0.083** | 0.773 |
+| 200x | -0.358 / +0.115 | +0.251 / -0.129 | 0.715 |
+
+At 1x there is no ramp (plane share 0.046) and detrending changes nothing, which is
+the method's own control. At 100x the plane is **77%** of truth's variance, and the
+uniform run's healthy-looking +0.318 detrends to **-0.083**: that number was the ramp.
+Detrended, the anchored net holds structure to ~50x and the uniform net loses it by
+**10x** — the anchored sampler helps at w=2 rather than flattering it, and *neither*
+comes near the 189x the encoder predicts.
+
+**And past 200x nobody is measuring anything.** `net_std` falls to 0.031 (200x),
+0.003 (500x), 0.001 (1000x) against a truth spread of 0.41 / 0.34 / 0.26 — by 500x
+the network's output is flat to about 1% of the truth's range. Every deep-zoom
+correlation anyone has posted, this README included, is the shape of float32 dust in
+a constant field, which is why its sign has never reproduced across runs.
+
+**What survives:** the encoder ceiling is real and sampler-independent (0.018478 world
+units, 189.4 cycles, identical under both samplers) — but it is an upper bound that is
+not reached. Where you actually land below it is set by the training distribution.
+
 ### Two things that did not work
 
 **The 1/Z prediction was wrong in form.** Network cycles were predicted to
